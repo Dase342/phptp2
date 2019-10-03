@@ -96,4 +96,15 @@ class UsersTable extends Table
 
         return $rules;
     }
+
+    protected function _setPassword($value)
+    {
+        if (strlen($value)) {
+            $hasher = new DefaultPasswordHasher();
+
+            return $hasher->hash($value);
+        }
+    }
+
+
 }
