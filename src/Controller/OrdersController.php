@@ -27,12 +27,7 @@ class OrdersController extends AppController
         $this->set(compact('orders'));
     }
 
-    public function quantities(){
-        $quantities = $this->request->getParam('pass');
-        $orders = $this->Orders->find('tagged', [
-            'quantities' => $quantities
-        ]);
-    }
+  
 
     /**
      * View method
