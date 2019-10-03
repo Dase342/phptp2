@@ -18,7 +18,7 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('menu_items_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('menu_item_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('quantity') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -29,7 +29,7 @@
             <?php foreach ($quantities as $quantity): ?>
             <tr>
                 <td><?= $this->Number->format($quantity->id) ?></td>
-                <td><?= $this->Number->format($quantity->menu_items_id) ?></td>
+                <td><?= $quantity->has('menu_item') ? $this->Html->link($quantity->menu_item->id, ['controller' => 'MenuItems', 'action' => 'view', $quantity->menu_item->id]) : '' ?></td>
                 <td><?= $this->Number->format($quantity->quantity) ?></td>
                 <td><?= h($quantity->created) ?></td>
                 <td><?= h($quantity->modified) ?></td>

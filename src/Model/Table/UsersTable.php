@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
+ * @property &\Cake\ORM\Association\BelongsTo $UserTypes
  * @property \App\Model\Table\OrdersTable&\Cake\ORM\Association\HasMany $Orders
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
@@ -40,6 +41,10 @@ class UsersTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('UserTypes', [
+            'foreignKey' => 'user_type_id',
+            'joinType' => 'INNER'
+        ]);
         $this->hasMany('Orders', [
             'foreignKey' => 'user_id'
         ]);
@@ -73,11 +78,6 @@ class UsersTable extends Table
             ->email('email')
             ->allowEmptyString('email');
 
-        $validator
-            ->integer('user_type')
-            ->requirePresence('user_type', 'create')
-            ->notEmptyString('user_type');
-
         return $validator;
     }
 
@@ -92,6 +92,7 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->existsIn(['user_type_id'], 'UserTypes'));
 
         return $rules;
     }

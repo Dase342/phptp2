@@ -25,7 +25,7 @@ class OrdersTableTest extends TestCase
     public $fixtures = [
         'app.Orders',
         'app.Users',
-        'app.MenuItemsQuantities'
+        'app.Quantities'
     ];
 
     /**

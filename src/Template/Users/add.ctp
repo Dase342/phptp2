@@ -20,7 +20,7 @@
             echo $this->Form->control('username');
             echo $this->Form->control('password');
             echo $this->Form->control('email');
-            echo $this->Form->input('user_type_id');
+            echo $this->Form->control('user_type_id');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

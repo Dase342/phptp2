@@ -59,7 +59,7 @@
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Menu Items Id') ?></th>
+                <th scope="col"><?= __('Menu Item Id') ?></th>
                 <th scope="col"><?= __('Quantity') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -68,7 +68,7 @@
             <?php foreach ($menuItem->quantities as $quantities): ?>
             <tr>
                 <td><?= h($quantities->id) ?></td>
-                <td><?= h($quantities->menu_items_id) ?></td>
+                <td><?= h($quantities->menu_item_id) ?></td>
                 <td><?= h($quantities->quantity) ?></td>
                 <td><?= h($quantities->created) ?></td>
                 <td><?= h($quantities->modified) ?></td>

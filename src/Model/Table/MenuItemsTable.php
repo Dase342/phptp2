@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * MenuItems Model
  *
  * @property \App\Model\Table\MenusTable&\Cake\ORM\Association\BelongsTo $Menus
- * @property \App\Model\Table\QuantitiesTable&\Cake\ORM\Association\BelongsToMany $Quantities
+ * @property \App\Model\Table\QuantitiesTable&\Cake\ORM\Association\HasMany $Quantities
  *
  * @method \App\Model\Entity\MenuItem get($primaryKey, $options = [])
  * @method \App\Model\Entity\MenuItem newEntity($data = null, array $options = [])
@@ -45,10 +45,8 @@ class MenuItemsTable extends Table
             'foreignKey' => 'menu_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsToMany('Quantities', [
-            'foreignKey' => 'menu_item_id',
-            'targetForeignKey' => 'quantity_id',
-            'joinTable' => 'menu_items_quantities'
+        $this->hasMany('Quantities', [
+            'foreignKey' => 'menu_item_id'
         ]);
     }
 

@@ -12,12 +12,6 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
-	public function initialize() {
-        parent::initialize();//super equivalent
-        // Add the 'add' action to the allowed actions list.
-        $this->Auth->allow(['logout', 'add']);
-    }
-	
     /**
      * Index method
      *
@@ -26,7 +20,6 @@ class UsersController extends AppController
     public function index()
     {
         $users = $this->paginate($this->Users);
-		
 
         $this->set(compact('users'));
     }
@@ -43,13 +36,8 @@ class UsersController extends AppController
         $user = $this->Users->get($id, [
             'contain' => ['Orders']
         ]);
-		
-		$user_types = $this->users->user_types->find('list');
-		
-		debug($user_types)
-		
 
-        $this->set('user', $user, compact('user_types'));
+        $this->set('user', $user);
     }
 
     /**
@@ -107,7 +95,6 @@ class UsersController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
-		
         if ($this->Users->delete($user)) {
             $this->Flash->success(__('The user has been deleted.'));
         } else {
@@ -116,29 +103,7 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-	public function login()
-    {
-		debug($this->request->getData());
-		
-		if ($this->request->is('post')) {
-            $user = $this->Auth->identify();
-			debug($user);
-            if ($user) {
-                $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
-            }
-            $this->Flash->error('Your email or password is incorrect.');
-        }
-    }
-	
-	public function logout() {
-        $this->Flash->success('You are now logged out.');
-        return $this->redirect($this->Auth->logout());
-    }
-	
-	public function isAuthorized($user)
-	{
-    // By default deny access.
-    return true;
-	}
+
+    
+
 }

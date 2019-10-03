@@ -13,8 +13,8 @@
         <li><?= $this->Html->link(__('New Order'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Menu Items Quantities'), ['controller' => 'MenuItemsQuantities', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Menu Items Quantity'), ['controller' => 'MenuItemsQuantities', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Quantities'), ['controller' => 'Quantities', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Quantity'), ['controller' => 'Quantities', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="orders view large-9 medium-8 columns content">
@@ -38,22 +38,28 @@
         </tr>
     </table>
     <div class="related">
-        <h4><?= __('Related Menu Items Quantities') ?></h4>
-        <?php if (!empty($order->menu_items_quantities)): ?>
+        <h4><?= __('Related Quantities') ?></h4>
+        <?php if (!empty($order->quantities)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Order Id') ?></th>
-                <th scope="col"><?= __('Quantity Id') ?></th>
+                <th scope="col"><?= __('Id') ?></th>
+                <th scope="col"><?= __('Menu Item Id') ?></th>
+                <th scope="col"><?= __('Quantity') ?></th>
+                <th scope="col"><?= __('Created') ?></th>
+                <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
-            <?php foreach ($order->menu_items_quantities as $menuItemsQuantities): ?>
+            <?php foreach ($order->quantities as $quantities): ?>
             <tr>
-                <td><?= h($menuItemsQuantities->order_id) ?></td>
-                <td><?= h($menuItemsQuantities->quantity_id) ?></td>
+                <td><?= h($quantities->id) ?></td>
+                <td><?= h($quantities->menu_item_id) ?></td>
+                <td><?= h($quantities->quantity) ?></td>
+                <td><?= h($quantities->created) ?></td>
+                <td><?= h($quantities->modified) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'MenuItemsQuantities', 'action' => 'view', $menuItemsQuantities->]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'MenuItemsQuantities', 'action' => 'edit', $menuItemsQuantities->]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'MenuItemsQuantities', 'action' => 'delete', $menuItemsQuantities->], ['confirm' => __('Are you sure you want to delete # {0}?', $menuItemsQuantities->)]) ?>
+                    <?= $this->Html->link(__('View'), ['controller' => 'Quantities', 'action' => 'view', $quantities->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Quantities', 'action' => 'edit', $quantities->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Quantities', 'action' => 'delete', $quantities->id], ['confirm' => __('Are you sure you want to delete # {0}?', $quantities->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

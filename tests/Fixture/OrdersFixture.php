@@ -41,8 +41,8 @@ class OrdersFixture extends TestFixture
             [
                 'id' => 1,
                 'user_id' => 1,
-                'created' => '2019-09-19',
-                'modified' => '2019-09-19'
+                'created' => '2019-10-03',
+                'modified' => '2019-10-03'
             ],
         ];
         parent::init();

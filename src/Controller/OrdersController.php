@@ -37,7 +37,7 @@ class OrdersController extends AppController
     public function view($id = null)
     {
         $order = $this->Orders->get($id, [
-            'contain' => ['Users', 'MenuItemsQuantities']
+            'contain' => ['Users', 'Quantities']
         ]);
 
         $this->set('order', $order);
@@ -61,7 +61,8 @@ class OrdersController extends AppController
             $this->Flash->error(__('The order could not be saved. Please, try again.'));
         }
         $users = $this->Orders->Users->find('list', ['limit' => 200]);
-        $this->set(compact('order', 'users'));
+        $quantities = $this->Orders->Quantities->find('list', ['limit' => 200]);
+        $this->set(compact('order', 'users', 'quantities'));
     }
 
     /**
@@ -74,7 +75,7 @@ class OrdersController extends AppController
     public function edit($id = null)
     {
         $order = $this->Orders->get($id, [
-            'contain' => []
+            'contain' => ['Quantities']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $order = $this->Orders->patchEntity($order, $this->request->getData());
@@ -86,7 +87,8 @@ class OrdersController extends AppController
             $this->Flash->error(__('The order could not be saved. Please, try again.'));
         }
         $users = $this->Orders->Users->find('list', ['limit' => 200]);
-        $this->set(compact('order', 'users'));
+        $quantities = $this->Orders->Quantities->find('list', ['limit' => 200]);
+        $this->set(compact('order', 'users', 'quantities'));
     }
 
     /**

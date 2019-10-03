@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Quantities Model
  *
  * @property \App\Model\Table\MenuItemsTable&\Cake\ORM\Association\BelongsTo $MenuItems
- * @property \App\Model\Table\MenuItemsTable&\Cake\ORM\Association\BelongsToMany $MenuItems
+ * @property &\Cake\ORM\Association\BelongsToMany $Orders
  *
  * @method \App\Model\Entity\Quantity get($primaryKey, $options = [])
  * @method \App\Model\Entity\Quantity newEntity($data = null, array $options = [])
@@ -42,13 +42,13 @@ class QuantitiesTable extends Table
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('MenuItems', [
-            'foreignKey' => 'menu_items_id',
+            'foreignKey' => 'menu_item_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsToMany('MenuItems', [
+        $this->belongsToMany('Orders', [
             'foreignKey' => 'quantity_id',
-            'targetForeignKey' => 'menu_item_id',
-            'joinTable' => 'menu_items_quantities'
+            'targetForeignKey' => 'order_id',
+            'joinTable' => 'orders_quantities'
         ]);
     }
 
@@ -81,7 +81,7 @@ class QuantitiesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['menu_items_id'], 'MenuItems'));
+        $rules->add($rules->existsIn(['menu_item_id'], 'MenuItems'));
 
         return $rules;
     }

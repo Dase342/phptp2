@@ -10,8 +10,8 @@
         <li><?= $this->Html->link(__('New Order'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Menu Items Quantities'), ['controller' => 'MenuItemsQuantities', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Menu Items Quantity'), ['controller' => 'MenuItemsQuantities', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Quantities'), ['controller' => 'Quantities', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Quantity'), ['controller' => 'Quantities', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="orders index large-9 medium-8 columns content">

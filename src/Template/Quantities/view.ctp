@@ -19,12 +19,12 @@
     <h3><?= h($quantity->id) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($quantity->id) ?></td>
+            <th scope="row"><?= __('Menu Item') ?></th>
+            <td><?= $quantity->has('menu_item') ? $this->Html->link($quantity->menu_item->id, ['controller' => 'MenuItems', 'action' => 'view', $quantity->menu_item->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Menu Items Id') ?></th>
-            <td><?= $this->Number->format($quantity->menu_items_id) ?></td>
+            <th scope="row"><?= __('Id') ?></th>
+            <td><?= $this->Number->format($quantity->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Quantity') ?></th>
@@ -39,39 +39,4 @@
             <td><?= h($quantity->modified) ?></td>
         </tr>
     </table>
-    <div class="related">
-        <h4><?= __('Related Menu Items') ?></h4>
-        <?php if (!empty($quantity->menu_items)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Menu Id') ?></th>
-                <th scope="col"><?= __('Menu Item Name') ?></th>
-                <th scope="col"><?= __('Menu Item Price') ?></th>
-                <th scope="col"><?= __('Menu Item Description') ?></th>
-                <th scope="col"><?= __('Other Details') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($quantity->menu_items as $menuItems): ?>
-            <tr>
-                <td><?= h($menuItems->id) ?></td>
-                <td><?= h($menuItems->menu_id) ?></td>
-                <td><?= h($menuItems->menu_item_name) ?></td>
-                <td><?= h($menuItems->menu_item_price) ?></td>
-                <td><?= h($menuItems->menu_item_description) ?></td>
-                <td><?= h($menuItems->other_details) ?></td>
-                <td><?= h($menuItems->created) ?></td>
-                <td><?= h($menuItems->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'MenuItems', 'action' => 'view', $menuItems->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'MenuItems', 'action' => 'edit', $menuItems->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'MenuItems', 'action' => 'delete', $menuItems->id], ['confirm' => __('Are you sure you want to delete # {0}?', $menuItems->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
-    </div>
 </div>

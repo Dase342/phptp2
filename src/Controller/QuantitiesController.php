@@ -19,6 +19,9 @@ class QuantitiesController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['MenuItems']
+        ];
         $quantities = $this->paginate($this->Quantities);
 
         $this->set(compact('quantities'));
@@ -71,7 +74,7 @@ class QuantitiesController extends AppController
     public function edit($id = null)
     {
         $quantity = $this->Quantities->get($id, [
-            'contain' => ['MenuItems']
+            'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $quantity = $this->Quantities->patchEntity($quantity, $this->request->getData());
@@ -105,10 +108,4 @@ class QuantitiesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-	
-	public function isAuthorized($user)
-	{
-    // By default deny access.
-    return true;
-	}
 }

@@ -7,12 +7,12 @@ use Cake\ORM\Entity;
  * Quantity Entity
  *
  * @property int $id
- * @property int $menu_items_id
+ * @property int $menu_item_id
  * @property int $quantity
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
  *
- * @property \App\Model\Entity\MenuItem[] $menu_items
+ * @property \App\Model\Entity\MenuItem $menu_item
  */
 class Quantity extends Entity
 {
@@ -26,10 +26,10 @@ class Quantity extends Entity
      * @var array
      */
     protected $_accessible = [
-        'menu_items_id' => true,
+        'menu_item_id' => true,
         'quantity' => true,
         'created' => true,
         'modified' => true,
-        'menu_items' => true
+        'menu_item' => true
     ];
 }

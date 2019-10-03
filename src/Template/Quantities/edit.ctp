@@ -23,9 +23,8 @@
     <fieldset>
         <legend><?= __('Edit Quantity') ?></legend>
         <?php
-            echo $this->Form->control('menu_items_id');
+            echo $this->Form->control('menu_item_id', ['options' => $menuItems]);
             echo $this->Form->control('quantity');
-            echo $this->Form->control('menu_items._ids', ['options' => $menuItems]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

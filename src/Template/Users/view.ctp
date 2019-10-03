@@ -35,8 +35,8 @@
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('User Type') ?></th>
-            <td><?= $this->Number->format($user->user_type) ?></td>
+            <th scope="row"><?= __('User Type Id') ?></th>
+            <td><?= $this->Number->format($user->user_type_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

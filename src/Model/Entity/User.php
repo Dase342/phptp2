@@ -12,7 +12,7 @@ use Cake\ORM\Entity;
  * @property string|null $email
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
- * @property int $user_type
+ * @property int $user_type_id
  *
  * @property \App\Model\Entity\Order[] $orders
  */
@@ -33,7 +33,7 @@ class User extends Entity
         'email' => true,
         'created' => true,
         'modified' => true,
-        'user_type' => true,
+        'user_type_id' => true,
         'orders' => true
     ];
 

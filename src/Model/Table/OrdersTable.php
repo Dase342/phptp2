@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Orders Model
  *
  * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsTo $Users
- * @property \App\Model\Table\MenuItemsQuantitiesTable&\Cake\ORM\Association\HasMany $MenuItemsQuantities
+ * @property \App\Model\Table\QuantitiesTable&\Cake\ORM\Association\BelongsToMany $Quantities
  *
  * @method \App\Model\Entity\Order get($primaryKey, $options = [])
  * @method \App\Model\Entity\Order newEntity($data = null, array $options = [])
@@ -45,8 +45,10 @@ class OrdersTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
-        $this->hasMany('MenuItemsQuantities', [
-            'foreignKey' => 'order_id'
+        $this->belongsToMany('Quantities', [
+            'foreignKey' => 'order_id',
+            'targetForeignKey' => 'quantity_id',
+            'joinTable' => 'orders_quantities'
         ]);
     }
 
