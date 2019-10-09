@@ -33,6 +33,9 @@ class UserTypesTable extends Table
         $this->setTable('user_types');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+        $this->hasMany('Users', [
+            'foreignKey' => 'user_id'
+        ]);
     }
 
     /**
