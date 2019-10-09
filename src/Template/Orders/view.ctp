@@ -42,16 +42,17 @@
         <?php if (!empty($order->quantities)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Menu Item Id') ?></th>
+                
+                <th scope="col"><?= __('Item name') ?></th>
                 <th scope="col"><?= __('Quantity') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($order->quantities as $quantities): ?>
+
             <tr>
-                <td><?= h($quantities->id) ?></td>
+                
                 <td><?= h($quantities->menu_item_id) ?></td>
                 <td><?= h($quantities->quantity) ?></td>
                 <td><?= h($quantities->created) ?></td>
