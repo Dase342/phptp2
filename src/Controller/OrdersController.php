@@ -18,6 +18,14 @@ class OrdersController extends AppController
      * @return \Cake\Http\Response|null
      */
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        
+        
+       
+    }
   
 
     public function index()
@@ -115,6 +123,8 @@ class OrdersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+
 
     
 }

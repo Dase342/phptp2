@@ -77,7 +77,12 @@ class AppController extends Controller
 	
 	public function isAuthorized($user)
 	{
-    // By default deny access.
+        $action = $this->request->getParam('action');
+        // Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
+        // authentifiés sur l'application
+        if (in_array($action, ['add', 'edit']) && $user['user_type_id'] == 1) {
+            return true;
+        }
     return false;
 	}
 }
