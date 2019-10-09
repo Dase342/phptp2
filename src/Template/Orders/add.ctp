@@ -19,7 +19,8 @@
     <fieldset>
         <legend><?= __('Add Order') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
+        
+            
             echo $this->Form->control('quantities._ids', ['options' => $quantities]);
         ?>
     </fieldset>
