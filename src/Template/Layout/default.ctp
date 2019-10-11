@@ -50,7 +50,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         if ($loguser) {
                             $user = $loguser['username'];
                             echo "<li>";
-                            echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                            echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]);
+                            echo "</li>";
+                            echo "<li>";
+                            echo $this->Html->link('logout', ['controller' => 'Users', 'action' => 'logout']);
                             echo "</li>";
                         } else {
                             echo "<li>";

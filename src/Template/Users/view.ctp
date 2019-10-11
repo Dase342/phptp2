@@ -22,10 +22,7 @@
             <th scope="row"><?= __('Username') ?></th>
             <td><?= h($user->username) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($user->password) ?></td>
-        </tr>
+       
         <tr>
             <th scope="row"><?= __('Email') ?></th>
             <td><?= h($user->email) ?></td>
@@ -33,10 +30,6 @@
         <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($user->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('User Type Id') ?></th>
-            <td><?= $this->Number->format($user->user_type_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -53,7 +46,7 @@
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('User Id') ?></th>
+              
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -61,7 +54,7 @@
             <?php foreach ($user->orders as $orders): ?>
             <tr>
                 <td><?= h($orders->id) ?></td>
-                <td><?= h($orders->user_id) ?></td>
+            
                 <td><?= h($orders->created) ?></td>
                 <td><?= h($orders->modified) ?></td>
                 <td class="actions">
