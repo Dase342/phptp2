@@ -49,11 +49,26 @@ class OrdersController extends AppController
      */
     public function view($id = null)
     {
+
         $order = $this->Orders->get($id, [
             'contain' => ['Users', 'Quantities']
         ]);
 
         $this->set('order', $order);
+    }
+
+    public function viewLast($id = null)
+    {
+        
+
+        $order = $this->Orders->find('all')->last();
+        //debug($order);
+        //die();
+
+        return $this->redirect(['action' => 'view', $order->id]);
+
+
+      
     }
 
     /**
