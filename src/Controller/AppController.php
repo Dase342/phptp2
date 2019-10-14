@@ -80,7 +80,9 @@ class AppController extends Controller
         $action = $this->request->getParam('action');
         // Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
         // authentifiés sur l'application
-        if (in_array($action, ['add', 'edit','viewLast']) && $user['user_type_id'] == 1) {
+        if (in_array($action, ['add', 'viewLast','view', 'index']) && $user['user_type_id'] == 1) {
+            return true;
+        } else if (in_array($action, ['add','edit', 'delete', 'index', 'view', 'viewLast']) && $user['user_type_id'] == 0) {
             return true;
         }
     return false;

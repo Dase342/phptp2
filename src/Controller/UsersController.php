@@ -57,16 +57,20 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+       
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
+
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $user_types = $this->Users->UserTypes->find("all");
         $this->set(compact('user', 'user_types'));
     }
+
+ 
 
     /**
      * Edit method

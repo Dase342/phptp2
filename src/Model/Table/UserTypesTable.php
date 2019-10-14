@@ -31,7 +31,7 @@ class UserTypesTable extends Table
         parent::initialize($config);
 
         $this->setTable('user_types');
-        $this->setDisplayField('id');
+        $this->setDisplayField('type');
         $this->setPrimaryKey('id');
         $this->hasMany('Users', [
             'foreignKey' => 'user_id'

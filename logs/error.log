@@ -4835,3 +4835,576 @@ Request URL: /orders/view-last
 Referer URL: http://localhost/phptp1/orders/
 
 
+2019-10-14 19:26:09 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\about.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\about.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\about')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('about', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('about')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('about')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/about
+Referer URL: http://localhost/phptp1/
+
+
+2019-10-14 19:26:52 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:28:05 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:29:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:29:52 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:31:41 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:31:57 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:36:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 19:55:02 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\Contenu\img\diagramme.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\Contenu\\img\\diagramme.png.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\Contenu\\i...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('Contenu/img/dia...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('Contenu/img/dia...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('Contenu', 'img', 'diagramme.png')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/Contenu/img/diagramme.png
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:52:21 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\img\\model...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('img/model.gif', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('img/model.gif')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:52:44 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\img\\model...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('img/model.gif', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('img/model.gif')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:53:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:55:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:55:54 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\img\\model...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('img/model.gif', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('img/model.gif')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:56:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:57:49 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\src\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\src\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\src\\img\\m...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('src/img/model.g...', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('src/img/model.g...')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('src', 'img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/src/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:58:57 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\img\\model...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('img/model.gif', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('img/model.gif')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+
+2019-10-14 22:59:46 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\img\model.gif.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\img\\model.gif.ctp',
+)
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\View.php(876): Cake\View\View->_getViewFileName('Pages\\img\\model...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render('img/model.gif', NULL)
+#2 F:\uniserver\UniServerZ\www\phptp1\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('img/model.gif')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PagesController->display('img', 'model.gif')
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+Request URL: /pages/img/model.gif
+Referer URL: http://localhost/phptp1/pages/about
+
+

@@ -7,9 +7,12 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+        
         <li><?= $this->Html->link(__('New order'), ['action' => 'add']) ?></li>
         
         <li><?= $this->Html->link(__('Add an article to order'), ['controller' => 'Quantities', 'action' => 'add']) ?></li>
+
+        <li><?= $this->Html->link(__('View last order'), ['action' => 'viewLast']) ?></li>
     </ul>
 </nav>
 <div class="orders index large-9 medium-8 columns content">

@@ -59,12 +59,15 @@ class OrdersController extends AppController
 
     public function viewLast($id = null)
     {
+
+        $userId = $this->Auth->user('id');
+
         
 
-        $order = $this->Orders->find('all')->last();
-        //debug($order);
-        //die();
+        $order = $this->Orders->find('all')->where(['Orders.user_id =' => $userId])->last();
 
+      
+       
         return $this->redirect(['action' => 'view', $order->id]);
 
 
@@ -78,6 +81,8 @@ class OrdersController extends AppController
      */
     public function add()
     {
+        $pastOrder = $this->Orders->find('all')->where(['Orders.user_id =' => $userId])->last();
+      
         $order = $this->Orders->newEntity();
         if ($this->request->is('post')) {
             $order = $this->Orders->patchEntity($order, $this->request->getData());
