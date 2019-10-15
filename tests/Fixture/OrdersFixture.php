@@ -19,9 +19,12 @@ class OrdersFixture extends TestFixture
         'user_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'finished' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        '_indexes' => [
+            'user_id' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
+        ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'user_id' => ['type' => 'unique', 'columns' => ['user_id'], 'length' => []],
             'orders_ibfk_1' => ['type' => 'foreign', 'columns' => ['user_id'], 'references' => ['users', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
         ],
         '_options' => [
@@ -41,8 +44,9 @@ class OrdersFixture extends TestFixture
             [
                 'id' => 1,
                 'user_id' => 1,
-                'created' => '2019-10-03',
-                'modified' => '2019-10-03'
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15',
+                'finished' => 1
             ],
         ];
         parent::init();

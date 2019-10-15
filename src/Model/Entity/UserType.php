@@ -8,6 +8,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $type
+ *
+ * @property \App\Model\Entity\User[] $users
  */
 class UserType extends Entity
 {
@@ -21,6 +23,7 @@ class UserType extends Entity
      * @var array
      */
     protected $_accessible = [
-        'type' => true
+        'type' => true,
+        'users' => true
     ];
 }

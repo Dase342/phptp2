@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Quantities Model
  *
  * @property \App\Model\Table\MenuItemsTable&\Cake\ORM\Association\BelongsTo $MenuItems
- * @property &\Cake\ORM\Association\BelongsToMany $Orders
+ * @property \App\Model\Table\OrdersTable&\Cake\ORM\Association\BelongsToMany $Orders
  *
  * @method \App\Model\Entity\Quantity get($primaryKey, $options = [])
  * @method \App\Model\Entity\Quantity newEntity($data = null, array $options = [])

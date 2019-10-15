@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * UserTypes Model
  *
+ * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\HasMany $Users
+ *
  * @method \App\Model\Entity\UserType get($primaryKey, $options = [])
  * @method \App\Model\Entity\UserType newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\UserType[] newEntities(array $data, array $options = [])
@@ -33,8 +35,9 @@ class UserTypesTable extends Table
         $this->setTable('user_types');
         $this->setDisplayField('type');
         $this->setPrimaryKey('id');
+
         $this->hasMany('Users', [
-            'foreignKey' => 'user_id'
+            'foreignKey' => 'user_type_id'
         ]);
     }
 

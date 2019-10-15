@@ -14,6 +14,7 @@ use Cake\ORM\Entity;
  * @property string|null $other_details
  * @property \Cake\I18n\FrozenDate|null $created
  * @property \Cake\I18n\FrozenDate|null $modified
+ * @property int $files_id
  *
  * @property \App\Model\Entity\Menu $menu
  * @property \App\Model\Entity\Quantity[] $quantities
@@ -37,6 +38,7 @@ class MenuItem extends Entity
         'other_details' => true,
         'created' => true,
         'modified' => true,
+        'files_id' => true,
         'menu' => true,
         'quantities' => true
     ];

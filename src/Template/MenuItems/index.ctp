@@ -7,11 +7,10 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Menu Item'), ['action' => 'add']) ?></li>
+        
         <li><?= $this->Html->link(__('List Menus'), ['controller' => 'Menus', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Menu'), ['controller' => 'Menus', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Quantities'), ['controller' => 'Quantities', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Quantity'), ['controller' => 'Quantities', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New article'), ['controller' => 'Quantities', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="menuItems index large-9 medium-8 columns content">
@@ -19,7 +18,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('menu_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('menu_item_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('menu_item_price') ?></th>

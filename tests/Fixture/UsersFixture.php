@@ -27,7 +27,7 @@ class UsersFixture extends TestFixture
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'users_ibfk_1' => ['type' => 'foreign', 'columns' => ['user_type_id'], 'references' => ['user_types', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
+            'users_ibfk_1' => ['type' => 'foreign', 'columns' => ['user_type_id'], 'references' => ['user_types', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -48,8 +48,8 @@ class UsersFixture extends TestFixture
                 'username' => 'Lorem ipsum dolor sit amet',
                 'password' => 'Lorem ipsum dolor sit amet',
                 'email' => 'Lorem ipsum dolor sit amet',
-                'created' => '2019-10-03',
-                'modified' => '2019-10-03',
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15',
                 'user_type_id' => 1
             ],
         ];

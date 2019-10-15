@@ -81,7 +81,7 @@ class OrdersController extends AppController
      */
     public function add()
     {
-        $pastOrder = $this->Orders->find('all')->where(['Orders.user_id =' => $userId])->last();
+   
       
         $order = $this->Orders->newEntity();
         if ($this->request->is('post')) {

@@ -123,3 +123,27 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
 
 
 
+2019-10-15 20:40:24 Notice: Notice (8): Undefined index: Files in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250
+Twig\Template::getAttribute() - ROOT\vendor\twig\twig\src\Template.php, line 704
+__TwigTemplate_847935b4b6df748d64779b9f753392bb78df662e8c60ecd3f06661f1cc623d95::doDisplay() - ROOT\tmp\cache\twigView\7f\7f156bfd17a1d3965cf56b0fa15bf98407de39016862e7c6b368ad1ba940f0dc.php, line 33
+Twig\Template::displayWithErrorHandling() - ROOT\vendor\twig\twig\src\Template.php, line 455
+Twig\Template::display() - ROOT\vendor\twig\twig\src\Template.php, line 422
+Twig\Template::render() - ROOT\vendor\twig\twig\src\Template.php, line 434
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1017
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 101
+Bake\Shell\Task\ModelTask::all() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 171
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 525
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
+[main] - ROOT\bin\cake.php, line 12
+
+
+

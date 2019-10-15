@@ -64,6 +64,11 @@ class OrdersTable extends Table
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
 
+        $validator
+            ->boolean('finished')
+            ->requirePresence('finished', 'create')
+            ->notEmptyString('finished');
+
         return $validator;
     }
 

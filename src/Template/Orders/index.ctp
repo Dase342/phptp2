@@ -29,6 +29,7 @@
         </thead>
         <tbody>
             <?php foreach ($orders as $order): ?>
+
             <tr>
                 <td><?= $this->Number->format($order->id) ?></td>
                 <!-- <td><?= $order->has('user') ? $this->Html->link($order->user->id, ['controller' => 'Users', 'action' => 'view', $order->user->id]) : '' ?></td> -->
@@ -40,6 +41,7 @@
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]) ?>
                 </td>
             </tr>
+            
             <?php endforeach; ?>
         </tbody>
     </table>

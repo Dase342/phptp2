@@ -26,7 +26,7 @@ class QuantitiesFixture extends TestFixture
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'quantities_ibfk_1' => ['type' => 'foreign', 'columns' => ['menu_item_id'], 'references' => ['menu_items', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
+            'quantities_ibfk_1' => ['type' => 'foreign', 'columns' => ['menu_item_id'], 'references' => ['menu_items', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -46,8 +46,8 @@ class QuantitiesFixture extends TestFixture
                 'id' => 1,
                 'menu_item_id' => 1,
                 'quantity' => 1,
-                'created' => '2019-10-03',
-                'modified' => '2019-10-03'
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15'
             ],
         ];
         parent::init();

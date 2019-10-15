@@ -14,6 +14,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $modified
  * @property int $user_type_id
  *
+ * @property \App\Model\Entity\UserType $user_type
  * @property \App\Model\Entity\Order[] $orders
  */
 class User extends Entity
@@ -34,6 +35,7 @@ class User extends Entity
         'created' => true,
         'modified' => true,
         'user_type_id' => true,
+        'user_type' => true,
         'orders' => true
     ];
 

@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * MenuItems Model
  *
  * @property \App\Model\Table\MenusTable&\Cake\ORM\Association\BelongsTo $Menus
+ * @property &\Cake\ORM\Association\BelongsTo $Files
  * @property \App\Model\Table\QuantitiesTable&\Cake\ORM\Association\HasMany $Quantities
  *
  * @method \App\Model\Entity\MenuItem get($primaryKey, $options = [])
@@ -36,13 +37,17 @@ class MenuItemsTable extends Table
         parent::initialize($config);
 
         $this->setTable('menu_items');
-        $this->setDisplayField('id');
+        $this->setDisplayField('menu_item_name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Menus', [
             'foreignKey' => 'menu_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Files', [
+            'foreignKey' => 'files_id',
             'joinType' => 'INNER'
         ]);
         $this->hasMany('Quantities', [
@@ -96,6 +101,7 @@ class MenuItemsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['menu_id'], 'Menus'));
+        $rules->add($rules->existsIn(['files_id'], 'Files'));
 
         return $rules;
     }

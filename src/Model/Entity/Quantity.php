@@ -13,6 +13,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $modified
  *
  * @property \App\Model\Entity\MenuItem $menu_item
+ * @property \App\Model\Entity\Order[] $orders
  */
 class Quantity extends Entity
 {
@@ -30,6 +31,7 @@ class Quantity extends Entity
         'quantity' => true,
         'created' => true,
         'modified' => true,
-        'menu_item' => true
+        'menu_item' => true,
+        'orders' => true
     ];
 }

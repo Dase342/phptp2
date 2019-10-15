@@ -17,6 +17,17 @@ class MenuItemsController extends AppController
      *
      * @return \Cake\Http\Response|null
      */
+
+    public function initialize()
+    {
+        parent::initialize();
+        
+        $this->loadModel('Files');
+
+        
+    }
+
+
     public function index()
     {
         $this->paginate = [

@@ -11,10 +11,7 @@
         <li><?= $this->Form->postLink(__('Delete Order'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Orders'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Order'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Quantities'), ['controller' => 'Quantities', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Quantity'), ['controller' => 'Quantities', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Add article'), ['controller' => 'Quantities', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="orders view large-9 medium-8 columns content">
@@ -22,7 +19,7 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('User') ?></th>
-            <td><?= $order->has('user') ? $this->Html->link($order->user->id, ['controller' => 'Users', 'action' => 'view', $order->user->id]) : '' ?></td>
+            <td><?= $order->has('user') ? h($order->user->username) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>
