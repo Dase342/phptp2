@@ -24,7 +24,7 @@
             echo $this->Form->control('menu_item_price');
             echo $this->Form->control('menu_item_description');
             echo $this->Form->control('other_details');
-            echo $this->Form->control('quantities._ids', ['options' => $quantities]);
+       
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

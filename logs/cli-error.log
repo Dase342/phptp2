@@ -208,3 +208,47 @@ Stack Trace:
 #15 {main}
 
 
+2019-10-16 00:35:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'resto_menu.menu' doesn't exist in F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 133
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'menu', Array, Object(Cake\Database\Schema\TableSchema))
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('menu', Array)
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('menu')
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'menu', 'Menu')
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Menu')
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('menu')
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#12 F:\uniserver\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'resto_menu.menu' doesn't exist in F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(131): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'menu', Array, Object(Cake\Database\Schema\TableSchema))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('menu', Array)
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('menu')
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'menu', 'Menu')
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Menu')
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('menu')
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#20 F:\uniserver\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+

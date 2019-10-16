@@ -17,6 +17,7 @@ use Cake\ORM\Entity;
  * @property int $files_id
  *
  * @property \App\Model\Entity\Menu $menu
+ * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Quantity[] $quantities
  */
 class MenuItem extends Entity
@@ -40,6 +41,7 @@ class MenuItem extends Entity
         'modified' => true,
         'files_id' => true,
         'menu' => true,
+        'file' => true,
         'quantities' => true
     ];
 }

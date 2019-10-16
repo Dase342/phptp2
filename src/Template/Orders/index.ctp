@@ -30,17 +30,37 @@
         <tbody>
             <?php foreach ($orders as $order): ?>
 
-            <tr>
-                <td><?= $this->Number->format($order->id) ?></td>
-                <!-- <td><?= $order->has('user') ? $this->Html->link($order->user->id, ['controller' => 'Users', 'action' => 'view', $order->user->id]) : '' ?></td> -->
-                <td><?= h($order->created) ?></td>
-                <td><?= h($order->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $order->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $order->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]) ?>
-                </td>
-            </tr>
+           <?php
+            if ($this->request->session()->read('Auth.User.user_type_id') == 1)
+            {
+                
+                echo "<tr>";
+                echo "<td>".$this->Number->format($order->id)."</td>";
+                echo "<td>". h($order->created). "</td>";
+                echo "<td> ". h($order->modified). "</td>";
+                echo "<td class=\"actions\">";
+                echo     $this->Html->link(__('View'), ['action' => 'view', $order->id]). " " ;
+                echo     $this->Html->link(__('Edit'), ['action' => 'edit', $order->id]). " " ;
+                echo     $this->Form->postLink(__('Delete'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]); 
+                echo "</td>";
+                echo"<tr>";
+            } else if ($this->request->session()->read('Auth.User.id') ==  $order->user->id) 
+            {
+                echo "<tr>";
+                echo "<td>".$this->Number->format($order->id)."</td>";
+                echo "<td>". h($order->created). "</td>";
+                echo "<td>". h($order->modified). "</td>";
+                echo "<td class=\"actions\">";
+                echo     $this->Html->link(__('View'), ['action' => 'view', $order->id]). " " ;
+                echo     $this->Html->link(__('Edit'), ['action' => 'edit', $order->id]). " " ;
+                echo     $this->Form->postLink(__('Delete'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]); 
+                echo "</td>";
+                echo"<tr>";
+            }
+                
+            ?> 
+            
+            
             
             <?php endforeach; ?>
         </tbody>

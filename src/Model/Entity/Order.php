@@ -10,7 +10,6 @@ use Cake\ORM\Entity;
  * @property int $user_id
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
- * @property bool $finished
  *
  * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Quantity[] $quantities
@@ -30,7 +29,6 @@ class Order extends Entity
         'user_id' => true,
         'created' => true,
         'modified' => true,
-        'finished' => true,
         'user' => true,
         'quantities' => true
     ];

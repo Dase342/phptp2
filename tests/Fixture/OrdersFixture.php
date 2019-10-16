@@ -19,7 +19,6 @@ class OrdersFixture extends TestFixture
         'user_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'finished' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
             'user_id' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
         ],
@@ -45,8 +44,7 @@ class OrdersFixture extends TestFixture
                 'id' => 1,
                 'user_id' => 1,
                 'created' => '2019-10-15',
-                'modified' => '2019-10-15',
-                'finished' => 1
+                'modified' => '2019-10-15'
             ],
         ];
         parent::init();

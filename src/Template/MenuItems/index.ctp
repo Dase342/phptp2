@@ -2,6 +2,8 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\MenuItem[]|\Cake\Collection\CollectionInterface $menuItems
+ * @var \App\Model\Entity\File $file
+ * 
  */
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
@@ -11,6 +13,7 @@
         <li><?= $this->Html->link(__('List Menus'), ['controller' => 'Menus', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Quantities'), ['controller' => 'Quantities', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New article'), ['controller' => 'Quantities', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Add image'), ['action' => 'addImg']) ?></li>
     </ul>
 </nav>
 <div class="menuItems index large-9 medium-8 columns content">
@@ -18,7 +21,9 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('menu_id') ?></th>
+            
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('image') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('menu_item_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('menu_item_price') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -28,9 +33,11 @@
         </thead>
         <tbody>
             <?php foreach ($menuItems as $menuItem): ?>
+     
             <tr>
                 <td><?= $this->Number->format($menuItem->id) ?></td>
-                <td><?= $menuItem->has('menu') ? $this->Html->link($menuItem->menu->id, ['controller' => 'Menus', 'action' => 'view', $menuItem->menu->id]) : '' ?></td>
+        
+                <td><?= $this->Html->image($menuItem->file->name, ['alt' => 'food', 'width'=>'100px', 'heigth'=>'100px']) ?></td>
                 <td><?= h($menuItem->menu_item_name) ?></td>
                 <td><?= $this->Number->format($menuItem->menu_item_price) ?></td>
                 <td><?= h($menuItem->created) ?></td>
@@ -39,6 +46,8 @@
                     <?= $this->Html->link(__('View'), ['action' => 'view', $menuItem->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $menuItem->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $menuItem->id], ['confirm' => __('Are you sure you want to delete # {0}?', $menuItem->id)]) ?>
+                    
+                    
                 </td>
             </tr>
             <?php endforeach; ?>

@@ -35,7 +35,7 @@
         </tr>
     </table>
     <div class="related">
-        <h4><?= __('Related Quantities') ?></h4>
+        <h4><?= __('Added articles') ?></h4>
         <?php if (!empty($order->quantities)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>

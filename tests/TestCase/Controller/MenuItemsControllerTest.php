@@ -22,8 +22,8 @@ class MenuItemsControllerTest extends TestCase
     public $fixtures = [
         'app.MenuItems',
         'app.Menus',
-        'app.Quantities',
-        'app.MenuItemsQuantities'
+        'app.Files',
+        'app.Quantities'
     ];
 
     /**

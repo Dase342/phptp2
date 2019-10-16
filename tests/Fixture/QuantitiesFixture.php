@@ -46,8 +46,8 @@ class QuantitiesFixture extends TestFixture
                 'id' => 1,
                 'menu_item_id' => 1,
                 'quantity' => 1,
-                'created' => '2019-10-15',
-                'modified' => '2019-10-15'
+                'created' => '2019-10-16',
+                'modified' => '2019-10-16'
             ],
         ];
         parent::init();

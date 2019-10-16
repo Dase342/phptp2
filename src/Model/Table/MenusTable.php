@@ -35,7 +35,7 @@ class MenusTable extends Table
         parent::initialize($config);
 
         $this->setTable('menus');
-        $this->setDisplayField('id');
+        $this->setDisplayField('menu_name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

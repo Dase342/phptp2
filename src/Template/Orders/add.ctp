@@ -19,11 +19,14 @@
     <fieldset>
         <legend><?= __('Add Order') ?></legend>
         <?php
+        if ($this->request->session()->read('Auth.User.user_type_id') == 1)
+        {
         
+            echo $this->Form->control('user_id', ['options' => $users]);
             
-            echo $this->Form->control('quantities._ids', ['options' => $quantities]);
+        }
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Create')) ?>
     <?= $this->Form->end() ?>
 </div>

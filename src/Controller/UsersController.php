@@ -66,8 +66,8 @@ class UsersController extends AppController
 
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
-        $user_types = $this->Users->UserTypes->find("all");
-        $this->set(compact('user', 'user_types'));
+        $userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'userTypes'));
     }
 
  
@@ -124,13 +124,13 @@ class UsersController extends AppController
             $this->Auth->setUser($user);
             return $this->redirect($this->Auth->redirectUrl());
         }
-        $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+        $this->Flash->error('Your username or password was incorrect');
     }
 }
 
 public function logout()
 {
-    $this->Flash->success('Vous avez été déconnecté.');
+    $this->Flash->success('You have been logged off.');
     return $this->redirect($this->Auth->logout());
 }
 

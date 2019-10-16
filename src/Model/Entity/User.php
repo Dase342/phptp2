@@ -1,6 +1,7 @@
 <?php
 namespace App\Model\Entity;
 
+use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\Entity;
 
 /**
@@ -13,6 +14,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $created
  * @property \Cake\I18n\FrozenDate $modified
  * @property int $user_type_id
+ * 
  *
  * @property \App\Model\Entity\UserType $user_type
  * @property \App\Model\Entity\Order[] $orders
@@ -47,4 +49,16 @@ class User extends Entity
     protected $_hidden = [
         'password'
     ];
+
+    protected function _setPassword($value)
+    {
+        if (strlen($value)) {
+            $hasher = new DefaultPasswordHasher();
+
+            return $hasher->hash($value);
+        }
+    }
+
+
+    
 }

@@ -2,6 +2,7 @@
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\MenuItem $menuItem
+ * @var \App\Model\Entity\File $files
  */
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
@@ -30,7 +31,8 @@
             echo $this->Form->control('menu_item_price');
             echo $this->Form->control('menu_item_description');
             echo $this->Form->control('other_details');
-            echo $this->Form->control('quantities._ids', ['options' => $quantities]);
+            echo $this->Form->control('files_id', ['options' => $files]);
+            
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

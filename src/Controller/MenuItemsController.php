@@ -7,6 +7,7 @@ use App\Controller\AppController;
  * MenuItems Controller
  *
  * @property \App\Model\Table\MenuItemsTable $MenuItems
+ * 
  *
  * @method \App\Model\Entity\MenuItem[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
@@ -31,7 +32,7 @@ class MenuItemsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Menus']
+            'contain' => ['Menus','Files']
         ];
         $menuItems = $this->paginate($this->MenuItems);
 
@@ -48,7 +49,7 @@ class MenuItemsController extends AppController
     public function view($id = null)
     {
         $menuItem = $this->MenuItems->get($id, [
-            'contain' => ['Menus', 'Quantities']
+            'contain' => ['Menus', 'Files']
         ]);
 
         $this->set('menuItem', $menuItem);
@@ -61,6 +62,7 @@ class MenuItemsController extends AppController
      */
     public function add()
     {
+        
         $menuItem = $this->MenuItems->newEntity();
         if ($this->request->is('post')) {
             $menuItem = $this->MenuItems->patchEntity($menuItem, $this->request->getData());
@@ -72,9 +74,61 @@ class MenuItemsController extends AppController
             $this->Flash->error(__('The menu item could not be saved. Please, try again.'));
         }
         $menus = $this->MenuItems->Menus->find('list', ['limit' => 200]);
-        $quantities = $this->MenuItems->Quantities->find('list', ['limit' => 200]);
-        $this->set(compact('menuItem', 'menus', 'quantities'));
+    
+        $files = $this->MenuItems->Files->find('list', ['limit' => 200]);
+
+        $this->set(compact('menuItem', 'menus', 'files'));
     }
+
+    public function addImg($id = null){
+        $uploadData = '';
+       
+          if ($this->request->is('post')) {
+            if(!empty($this->request->data['file']['name'])){
+                $fileName = $this->request->data['file']['name'];
+                $uploadPath = 'img/';
+                $uploadFile = $uploadPath.$fileName;
+                $ext = substr(strtolower(strrchr($fileName, '.')), 1); 
+                $arr_ext = array('jpg', 'jpeg', 'gif','png');
+                if(in_array($ext, $arr_ext))
+                {
+                    if(move_uploaded_file($this->request->data['file']['tmp_name'],$uploadFile)){
+                        $uploadData = $this->Files->newEntity();
+                        $uploadData->name = $fileName;
+                        $uploadData->path = $uploadPath;
+                        $uploadData->created = date("Y-m-d H:i:s");
+                        $uploadData->modified = date("Y-m-d H:i:s");
+                      
+                        if ($this->Files->save($uploadData)) {
+                            $this->Flash->success(__('File has been uploaded and inserted successfully.'));
+
+                            return $this->redirect(['action' => 'index']);
+                        }else{
+                            $this->Flash->error(__('Unable to upload file, please try again.'));
+                        }
+                    }else{
+                        $this->Flash->error(__('Unable to upload file, please try again.'));
+                    }
+                } else {
+                    $this->Flash->error(__('File is not an image.'));
+                }
+                
+            }else{
+                $this->Flash->error(__('Please choose a file to upload.'));
+            }
+            
+        }
+        $this->set('uploadData', $uploadData);
+        
+        $files = $this->Files->find('all', ['order' => ['Files.created' => 'DESC']]);
+        $filesRowNum = $files->count();
+        $this->set('files',$files);
+        $this->set('filesRowNum',$filesRowNum);
+
+        
+    }
+
+    
 
     /**
      * Edit method
@@ -86,7 +140,7 @@ class MenuItemsController extends AppController
     public function edit($id = null)
     {
         $menuItem = $this->MenuItems->get($id, [
-            'contain' => ['Quantities']
+            'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $menuItem = $this->MenuItems->patchEntity($menuItem, $this->request->getData());
@@ -98,8 +152,8 @@ class MenuItemsController extends AppController
             $this->Flash->error(__('The menu item could not be saved. Please, try again.'));
         }
         $menus = $this->MenuItems->Menus->find('list', ['limit' => 200]);
-        $quantities = $this->MenuItems->Quantities->find('list', ['limit' => 200]);
-        $this->set(compact('menuItem', 'menus', 'quantities'));
+        $files = $this->MenuItems->Files->find('list', ['limit' => 200]);
+        $this->set(compact('menuItem', 'menus', 'files'));
     }
 
     /**

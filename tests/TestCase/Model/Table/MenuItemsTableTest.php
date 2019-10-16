@@ -25,6 +25,7 @@ class MenuItemsTableTest extends TestCase
     public $fixtures = [
         'app.MenuItems',
         'app.Menus',
+        'app.Files',
         'app.Quantities'
     ];
 

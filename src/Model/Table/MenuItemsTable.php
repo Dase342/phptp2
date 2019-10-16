@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * MenuItems Model
  *
  * @property \App\Model\Table\MenusTable&\Cake\ORM\Association\BelongsTo $Menus
- * @property &\Cake\ORM\Association\BelongsTo $Files
+ * @property \App\Model\Table\FilesTable&\Cake\ORM\Association\BelongsTo $Files
  * @property \App\Model\Table\QuantitiesTable&\Cake\ORM\Association\HasMany $Quantities
  *
  * @method \App\Model\Entity\MenuItem get($primaryKey, $options = [])

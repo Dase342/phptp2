@@ -34,6 +34,8 @@ class OrdersController extends AppController
             'contain' => ['Users']
         ];
         $orders = $this->paginate($this->Orders);
+        
+        $userId = $this->Auth->user('user_type_id');
 
         $this->set(compact('orders'));
     }
@@ -53,6 +55,8 @@ class OrdersController extends AppController
         $order = $this->Orders->get($id, [
             'contain' => ['Users', 'Quantities']
         ]);
+
+
 
         $this->set('order', $order);
     }
