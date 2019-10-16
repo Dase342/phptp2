@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2019-10-16 17:29+0000\n"
-"PO-Revision-Date: 2019-10-16 13:30-0400\n"
+"PO-Revision-Date: 2019-10-16 17:26-0400\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr "ошибка"
 
 #: Template/Error/error400.ctp:37
 msgid "The requested address {0} was not found on this server."
-msgstr "Запрошенный адрес {0} не найден на этом сервере."
+msgstr ""
 
 #: Template/Error/error500.ctp:39
 msgid "An Internal Error Has Occurred"
@@ -59,166 +59,166 @@ msgstr "Запрашиваемый файл не найден"
 
 #: I18n/Number.php:90
 msgid "{0,number,#,###.##} KB"
-msgstr "{0, number, #, ###. ##} КБ"
+msgstr ""
 
 #: I18n/Number.php:92
 msgid "{0,number,#,###.##} MB"
-msgstr "{0, number, #, ###. ##} МБ"
+msgstr ""
 
 #: I18n/Number.php:94
 msgid "{0,number,#,###.##} GB"
-msgstr "{0, number, #, ###. ##} ГБ"
+msgstr ""
 
 #: I18n/Number.php:96
 msgid "{0,number,#,###.##} TB"
-msgstr "{0, число, #, ###. ##} ТБ"
+msgstr ""
 
 #: I18n/Number.php:88
 msgid "{0,number,integer} Byte"
 msgid_plural "{0,number,integer} Bytes"
-msgstr[0] "{0, число, целое число} байт"
-msgstr[1] "{0, число, целое число} байт"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:80
 msgid "{0} from now"
-msgstr "{0} с этого момента"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:80
 msgid "{0} ago"
-msgstr "{0} назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:83
 msgid "{0} after"
-msgstr "{0} после"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:83
 msgid "{0} before"
-msgstr "{0} до"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:114
 msgid "just now"
-msgstr "прямо сейчас"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:151
 msgid "about a second ago"
-msgstr "около секунды назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:152
 msgid "about a minute ago"
-msgstr "около минуты назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:153
 msgid "about an hour ago"
-msgstr "около часа назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:154 I18n/RelativeTimeFormatter.php:332
 msgid "about a day ago"
-msgstr "около дня назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:155 I18n/RelativeTimeFormatter.php:333
 msgid "about a week ago"
-msgstr "около недели назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:156 I18n/RelativeTimeFormatter.php:334
 msgid "about a month ago"
-msgstr "Около месяца назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:157 I18n/RelativeTimeFormatter.php:335
 msgid "about a year ago"
-msgstr "около года назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:168
 msgid "in about a second"
-msgstr "примерно через секунду"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:169
 msgid "in about a minute"
-msgstr "примерно через минуту"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:170
 msgid "in about an hour"
-msgstr "примерно через час"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:171 I18n/RelativeTimeFormatter.php:346
 msgid "in about a day"
-msgstr "примерно через день"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:172 I18n/RelativeTimeFormatter.php:347
 msgid "in about a week"
-msgstr "примерно через неделю"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:173 I18n/RelativeTimeFormatter.php:348
 msgid "in about a month"
-msgstr "примерно через месяц"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:174 I18n/RelativeTimeFormatter.php:349
 msgid "in about a year"
-msgstr "примерно через год"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:304
 msgid "today"
-msgstr "сегодня"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:370
 msgid "%s ago"
-msgstr "%s назад"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:371
 msgid "on %s"
-msgstr "на %s"
+msgstr ""
 
 #: I18n/RelativeTimeFormatter.php:47 I18n/RelativeTimeFormatter.php:126
 #: I18n/RelativeTimeFormatter.php:316
 msgid "{0} year"
 msgid_plural "{0} years"
-msgstr[0] "{0} год"
-msgstr[1] "{0} год"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:51 I18n/RelativeTimeFormatter.php:129
 #: I18n/RelativeTimeFormatter.php:319
 msgid "{0} month"
 msgid_plural "{0} months"
-msgstr[0] "{0} месяц"
-msgstr[1] "{0} месяц"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:57 I18n/RelativeTimeFormatter.php:132
 #: I18n/RelativeTimeFormatter.php:322
 msgid "{0} week"
 msgid_plural "{0} weeks"
-msgstr[0] "{0} неделя"
-msgstr[1] "{0} неделя"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:59 I18n/RelativeTimeFormatter.php:135
 #: I18n/RelativeTimeFormatter.php:325
 msgid "{0} day"
 msgid_plural "{0} days"
-msgstr[0] "{0} день"
-msgstr[1] "{0} день"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:64 I18n/RelativeTimeFormatter.php:138
 msgid "{0} hour"
 msgid_plural "{0} hours"
-msgstr[0] "{0} час"
-msgstr[1] "{0} час"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:68 I18n/RelativeTimeFormatter.php:141
 msgid "{0} minute"
 msgid_plural "{0} minutes"
-msgstr[0] "{0} минута"
-msgstr[1] "{0} минута"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: I18n/RelativeTimeFormatter.php:72 I18n/RelativeTimeFormatter.php:144
 msgid "{0} second"
 msgid_plural "{0} seconds"
-msgstr[0] "{0} второй"
-msgstr[1] "{0} второй"
+msgstr[0] ""
+msgstr[1] ""
 msgstr[2] ""
 
 #: ORM/RulesChecker.php:57
@@ -259,7 +259,7 @@ msgstr "Новый {0}"
 
 #: View/Helper/FormHelper.php:2030
 msgid "Submit"
-msgstr "представить"
+msgstr ""
 
 #: View/Helper/HtmlHelper.php:819
 msgid "Home"
@@ -267,47 +267,47 @@ msgstr "Главная"
 
 #: View/Widget/DateTimeWidget.php:540
 msgid "January"
-msgstr "январь"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:541
 msgid "February"
-msgstr "февраль"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:542
 msgid "March"
-msgstr "марш"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:543
 msgid "April"
-msgstr "апрель"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:544
 msgid "May"
-msgstr "май"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:545
 msgid "June"
-msgstr "июнь"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:546
 msgid "July"
-msgstr "июль"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:547
 msgid "August"
-msgstr "августейший"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:548
 msgid "September"
-msgstr "сентябрь"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:549
 msgid "October"
-msgstr "октября"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:550
 msgid "November"
-msgstr "ноябрь"
+msgstr ""
 
 #: View/Widget/DateTimeWidget.php:551
 msgid "December"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2019-10-16 17:22+0000\n"
-"PO-Revision-Date: 2019-10-16 13:23-0400\n"
+"PO-Revision-Date: 2019-10-16 17:21-0400\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: ru_RU\n"
@@ -72,15 +72,15 @@ msgstr "Заказ был сохранен."
 #: Controller/OrdersController.php:100 Controller/OrdersController.php:127
 #: Controller/OrdersQuantitiesController.php:60
 msgid "The order could not be saved. Please, try again."
-msgstr "Заказ не может быть сохранен. Пожалуйста, попробуйте еще раз."
+msgstr "3аказ не может быть сохранен. Пожалуйста, попробуйте еще раз."
 
 #: Controller/OrdersController.php:146
 msgid "The order has been deleted."
-msgstr "Заказ был удален."
+msgstr "3аказ был удален."
 
 #: Controller/OrdersController.php:148
 msgid "The order could not be deleted. Please, try again."
-msgstr "Заказ не может быть удален. Пожалуйста, попробуйте еще раз."
+msgstr "3аказ не может быть удален. Пожалуйста, попробуйте еще раз."
 
 #: Controller/OrdersQuantitiesController.php:91
 msgid "The orders quantity has been saved."
