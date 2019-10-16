@@ -24,7 +24,7 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Menu') ?></th>
-            <td><?= $menuItem->has('menu') ? $this->Html->link($menuItem->menu->id, ['controller' => 'Menus', 'action' => 'view', $menuItem->menu->id]) : '' ?></td>
+            <td><?= $menuItem->has('menu') ? $this->Html->link($menuItem->menu->menu_name, ['controller' => 'Menus', 'action' => 'view', $menuItem->menu->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Menu Item Name') ?></th>

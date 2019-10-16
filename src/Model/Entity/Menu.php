@@ -2,7 +2,7 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-
+use Cake\ORM\Behavior\Translate\TranslateTrait;
 /**
  * Menu Entity
  *
@@ -26,6 +26,9 @@ class Menu extends Entity
      *
      * @var array
      */
+
+    use TranslateTrait;
+
     protected $_accessible = [
         'menu_name' => true,
         'created' => true,

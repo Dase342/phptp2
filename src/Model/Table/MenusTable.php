@@ -37,7 +37,7 @@ class MenusTable extends Table
         $this->setTable('menus');
         $this->setDisplayField('menu_name');
         $this->setPrimaryKey('id');
-
+        $this->addBehavior('Translate', ['fields' => ['menu_description']]);
         $this->addBehavior('Timestamp');
 
         $this->hasMany('MenuItems', [

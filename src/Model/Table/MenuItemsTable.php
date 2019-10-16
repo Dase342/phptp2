@@ -42,7 +42,7 @@ class MenuItemsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-        $this->addBehavior('Translate', ['fields' => ['menu_item_description']]);
+        $this->addBehavior('Translate', ['fields' => ['menu_item_description','other_details']]);
 
         $this->belongsTo('Menus', [
             'foreignKey' => 'menu_id',
