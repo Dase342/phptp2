@@ -7,7 +7,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Quantity'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Add article'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Menu Items'), ['controller' => 'MenuItems', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Menu Item'), ['controller' => 'MenuItems', 'action' => 'add']) ?></li>
     </ul>
@@ -17,7 +17,7 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                
                 <th scope="col"><?= $this->Paginator->sort('menu_item_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('quantity') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -28,8 +28,8 @@
         <tbody>
             <?php foreach ($quantities as $quantity): ?>
             <tr>
-                <td><?= $this->Number->format($quantity->id) ?></td>
-                <td><?= $quantity->has('menu_item') ? $this->Html->link($quantity->menu_item->id, ['controller' => 'MenuItems', 'action' => 'view', $quantity->menu_item->id]) : '' ?></td>
+              
+                <td><?= $quantity->has('menu_item') ? $this->Html->link($quantity->menu_item->menu_item_name, ['controller' => 'MenuItems', 'action' => 'view', $quantity->menu_item->id]) : '' ?></td>
                 <td><?= $this->Number->format($quantity->quantity) ?></td>
                 <td><?= h($quantity->created) ?></td>
                 <td><?= h($quantity->modified) ?></td>

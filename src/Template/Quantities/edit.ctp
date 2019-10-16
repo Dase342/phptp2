@@ -13,7 +13,7 @@
                 ['confirm' => __('Are you sure you want to delete # {0}?', $quantity->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Quantities'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List articles'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Menu Items'), ['controller' => 'MenuItems', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Menu Item'), ['controller' => 'MenuItems', 'action' => 'add']) ?></li>
     </ul>

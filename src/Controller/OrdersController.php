@@ -95,13 +95,14 @@ class OrdersController extends AppController
             if ($this->Orders->save($order)) {
                 $this->Flash->success(__('The order has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'Quantities', 'action' => 'add']);
             }
             $this->Flash->error(__('The order could not be saved. Please, try again.'));
         }
         $users = $this->Orders->Users->find('list', ['limit' => 200]);
         $quantities = $this->Orders->Quantities->find('list', ['limit' => 200]);
         $this->set(compact('order', 'users', 'quantities'));
+
     }
 
     /**

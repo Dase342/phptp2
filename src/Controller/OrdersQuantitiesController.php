@@ -18,6 +18,9 @@ class OrdersQuantitiesController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Orders', 'Quantities']
+        ];
         $ordersQuantities = $this->paginate($this->OrdersQuantities);
 
         $this->set(compact('ordersQuantities'));
@@ -50,13 +53,24 @@ class OrdersQuantitiesController extends AppController
         if ($this->request->is('post')) {
             $ordersQuantity = $this->OrdersQuantities->patchEntity($ordersQuantity, $this->request->getData());
             if ($this->OrdersQuantities->save($ordersQuantity)) {
-                
+                $this->Flash->success(__('The order has been saved.'));
 
-                return $this->redirect(['controller' => 'Orders', 'action' => 'index']);
+                return $this->redirect(['controller' => 'Orders','action' => 'index']);
             }
-            $this->Flash->error(__('The orders quantity could not be saved. Please, try again.'));
+            $this->Flash->error(__('The order could not be saved. Please, try again.'));
         }
-        $this->set(compact('ordersQuantity'));
+        $type = $this->Auth->user('user_type_id');
+        $userId = $this->Auth->user('id');
+
+        if($type == 1){
+            $orders = $this->OrdersQuantities->Orders->find('list', ['limit' => 200]);
+            $quantities = $this->OrdersQuantities->Quantities->find('list', ['limit' => 200]);
+        } else {
+            $orders = $this->OrdersQuantities->Orders->find('list', ['limit' => 200])->where(['Orders.user_id =' => $userId]);
+            $quantities = $this->OrdersQuantities->Quantities->find('list', ['limit' => 200]);
+        }
+        
+        $this->set(compact('ordersQuantity', 'orders', 'quantities'));
     }
 
     /**

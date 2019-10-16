@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\MenuItem $menuItem
  */
+
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -44,6 +45,10 @@
             <th scope="row"><?= __('Modified') ?></th>
             <td><?= h($menuItem->modified) ?></td>
         </tr>
+        <tr>
+            <th scope="row"><?= __('Image') ?></th>
+            <td><?= $this->Html->image($menuItem->file->name, ['alt' => 'food', 'width'=>'100px', 'heigth'=>'100px']) ?></td>
+        </tr>
     </table>
     <div class="row">
         <h4><?= __('Menu Item Description') ?></h4>
@@ -53,33 +58,5 @@
         <h4><?= __('Other Details') ?></h4>
         <?= $this->Text->autoParagraph(h($menuItem->other_details)); ?>
     </div>
-    <div class="related">
-        <h4><?= __('Related Quantities') ?></h4>
-        <?php if (!empty($menuItem->quantities)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Menu Item Id') ?></th>
-                <th scope="col"><?= __('Quantity') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($menuItem->quantities as $quantities): ?>
-            <tr>
-                <td><?= h($quantities->id) ?></td>
-                <td><?= h($quantities->menu_item_id) ?></td>
-                <td><?= h($quantities->quantity) ?></td>
-                <td><?= h($quantities->created) ?></td>
-                <td><?= h($quantities->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Quantities', 'action' => 'view', $quantities->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Quantities', 'action' => 'edit', $quantities->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Quantities', 'action' => 'delete', $quantities->id], ['confirm' => __('Are you sure you want to delete # {0}?', $quantities->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-        <?php endif; ?>
-    </div>
+   
 </div>

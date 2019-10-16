@@ -56,7 +56,7 @@ class QuantitiesController extends AppController
             if ($this->Quantities->save($quantity)) {
                 $this->Flash->success(__('The quantity has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'OrdersQuantities', 'action' => 'add']);
             }
             $this->Flash->error(__('The quantity could not be saved. Please, try again.'));
         }
