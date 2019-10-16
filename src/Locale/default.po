@@ -1,0 +1,673 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-16 17:08+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/MenuItemsController.php:70
+#: Controller/MenuItemsController.php:148
+msgid "The menu item has been saved."
+msgstr ""
+
+#: Controller/MenuItemsController.php:74
+#: Controller/MenuItemsController.php:152
+msgid "The menu item could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MenuItemsController.php:103
+msgid "File has been uploaded and inserted successfully."
+msgstr ""
+
+#: Controller/MenuItemsController.php:107
+#: Controller/MenuItemsController.php:110
+msgid "Unable to upload file, please try again."
+msgstr ""
+
+#: Controller/MenuItemsController.php:113
+msgid "File is not an image."
+msgstr ""
+
+#: Controller/MenuItemsController.php:117
+msgid "Please choose a file to upload."
+msgstr ""
+
+#: Controller/MenuItemsController.php:171
+msgid "The menu item has been deleted."
+msgstr ""
+
+#: Controller/MenuItemsController.php:173
+msgid "The menu item could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MenusController.php:54
+#: Controller/MenusController.php:78
+msgid "The menu has been saved."
+msgstr ""
+
+#: Controller/MenusController.php:58
+#: Controller/MenusController.php:82
+msgid "The menu could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MenusController.php:99
+msgid "The menu has been deleted."
+msgstr ""
+
+#: Controller/MenusController.php:101
+msgid "The menu could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/OrdersController.php:96
+#: Controller/OrdersController.php:123
+#: Controller/OrdersQuantitiesController.php:56
+msgid "The order has been saved."
+msgstr ""
+
+#: Controller/OrdersController.php:100
+#: Controller/OrdersController.php:127
+#: Controller/OrdersQuantitiesController.php:60
+msgid "The order could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OrdersController.php:146
+msgid "The order has been deleted."
+msgstr ""
+
+#: Controller/OrdersController.php:148
+msgid "The order could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/OrdersQuantitiesController.php:91
+msgid "The orders quantity has been saved."
+msgstr ""
+
+#: Controller/OrdersQuantitiesController.php:95
+msgid "The orders quantity could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OrdersQuantitiesController.php:112
+msgid "The orders quantity has been deleted."
+msgstr ""
+
+#: Controller/OrdersQuantitiesController.php:114
+msgid "The orders quantity could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/QuantitiesController.php:57
+#: Controller/QuantitiesController.php:82
+msgid "The quantity has been saved."
+msgstr ""
+
+#: Controller/QuantitiesController.php:61
+#: Controller/QuantitiesController.php:86
+msgid "The quantity could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/QuantitiesController.php:104
+msgid "The quantity has been deleted."
+msgstr ""
+
+#: Controller/QuantitiesController.php:106
+msgid "The quantity could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:62
+#: Controller/UsersController.php:90
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:67
+#: Controller/UsersController.php:94
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:111
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:113
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Layout/default.ctp:56
+msgid "Logout"
+msgstr ""
+
+#: Template/Layout/default.ctp:60
+msgid "Create account"
+msgstr ""
+
+#: Template/Layout/default.ctp:63
+msgid "Login"
+msgstr ""
+
+#: Template/Layout/default.ctp:74
+msgid "About"
+msgstr ""
+
+#: Template/Layout/default.ctp:77
+msgid "Home"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:9
+#: Template/MenuItems/edit.ctp:10
+#: Template/MenuItems/index.ctp:11
+#: Template/MenuItems/index.ctp:31
+#: Template/MenuItems/view.ctp:10
+#: Template/Menus/add.ctp:9
+#: Template/Menus/edit.ctp:9
+#: Template/Menus/index.ctp:9
+#: Template/Menus/index.ctp:24
+#: Template/Menus/view.ctp:9
+#: Template/Menus/view.ctp:59
+#: Template/Orders/add.ctp:9
+#: Template/Orders/edit.ctp:9
+#: Template/Orders/index.ctp:9
+#: Template/Orders/index.ctp:27
+#: Template/Orders/view.ctp:9
+#: Template/Orders/view.ctp:47
+#: Template/OrdersQuantities/add.ctp:9
+#: Template/Quantities/add.ctp:9
+#: Template/Quantities/edit.ctp:9
+#: Template/Quantities/index.ctp:9
+#: Template/Quantities/index.ctp:25
+#: Template/Quantities/view.ctp:9
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9
+#: Template/Users/index.ctp:27
+#: Template/Users/view.ctp:9
+#: Template/Users/view.ctp:46
+msgid "Actions"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:10
+#: Template/MenuItems/edit.ctp:17
+#: Template/MenuItems/view.ctp:13
+#: Template/Menus/add.ctp:11
+#: Template/Menus/edit.ctp:17
+#: Template/Menus/index.ctp:11
+#: Template/Menus/view.ctp:14
+#: Template/Quantities/add.ctp:11
+#: Template/Quantities/edit.ctp:17
+#: Template/Quantities/index.ctp:11
+#: Template/Quantities/view.ctp:14
+msgid "List Menu Items"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:11
+#: Template/MenuItems/edit.ctp:18
+#: Template/MenuItems/index.ctp:13
+#: Template/MenuItems/view.ctp:15
+#: Template/Menus/add.ctp:10
+#: Template/Menus/edit.ctp:16
+#: Template/Menus/view.ctp:12
+msgid "List Menus"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:12
+#: Template/MenuItems/edit.ctp:19
+#: Template/MenuItems/view.ctp:16
+#: Template/Menus/index.ctp:10
+#: Template/Menus/view.ctp:13
+msgid "New Menu"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:13
+#: Template/MenuItems/edit.ctp:20
+#: Template/MenuItems/index.ctp:14
+#: Template/MenuItems/view.ctp:17
+#: Template/Orders/add.ctp:13
+#: Template/Orders/edit.ctp:19
+msgid "List Quantities"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:14
+#: Template/MenuItems/edit.ctp:21
+#: Template/MenuItems/view.ctp:18
+#: Template/Orders/add.ctp:14
+#: Template/Orders/edit.ctp:20
+msgid "New Quantity"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:20
+msgid "Add Menu Item"
+msgstr ""
+
+#: Template/MenuItems/add.ctp:30
+#: Template/MenuItems/edit.ctp:38
+#: Template/Menus/add.ctp:25
+#: Template/Menus/edit.ctp:31
+#: Template/Orders/edit.ctp:32
+#: Template/Quantities/add.ctp:24
+#: Template/Quantities/edit.ctp:30
+#: Template/Users/add.ctp:27
+#: Template/Users/edit.ctp:32
+msgid "Submit"
+msgstr ""
+
+#: Template/MenuItems/add_img.ctp:13
+msgid "Upload File"
+msgstr ""
+
+#: Template/MenuItems/edit.ctp:12
+#: Template/MenuItems/index.ctp:48
+#: Template/Menus/edit.ctp:11
+#: Template/Menus/index.ctp:37
+#: Template/Menus/view.ctp:74
+#: Template/Orders/edit.ctp:11
+#: Template/Orders/index.ctp:44
+#: Template/Orders/index.ctp:56
+#: Template/Orders/view.ctp:60
+#: Template/Quantities/edit.ctp:11
+#: Template/Quantities/index.ctp:39
+#: Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:43
+#: Template/Users/view.ctp:57
+msgid "Delete"
+msgstr ""
+
+#: Template/MenuItems/edit.ctp:14
+#: Template/MenuItems/index.ctp:48
+#: Template/MenuItems/view.ctp:12
+#: Template/Menus/edit.ctp:13
+#: Template/Menus/index.ctp:37
+#: Template/Menus/view.ctp:11
+#: Template/Menus/view.ctp:74
+#: Template/Orders/edit.ctp:13
+#: Template/Orders/index.ctp:44
+#: Template/Orders/index.ctp:56
+#: Template/Orders/view.ctp:11
+#: Template/Orders/view.ctp:60
+#: Template/Quantities/edit.ctp:13
+#: Template/Quantities/index.ctp:39
+#: Template/Quantities/view.ctp:11
+#: Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:43
+#: Template/Users/view.ctp:57
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/MenuItems/edit.ctp:27
+#: Template/MenuItems/view.ctp:11
+msgid "Edit Menu Item"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:15
+#: Template/Quantities/view.ctp:13
+msgid "New article"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:16
+msgid "Add image"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:20
+msgid "Menu Items"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:46
+#: Template/Menus/index.ctp:35
+#: Template/Menus/view.ctp:72
+#: Template/Orders/index.ctp:42
+#: Template/Orders/index.ctp:54
+#: Template/Orders/view.ctp:58
+#: Template/Quantities/index.ctp:37
+#: Template/Users/index.ctp:41
+#: Template/Users/view.ctp:55
+msgid "View"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:47
+#: Template/Menus/index.ctp:36
+#: Template/Menus/view.ctp:73
+#: Template/Orders/index.ctp:43
+#: Template/Orders/index.ctp:55
+#: Template/Orders/view.ctp:59
+#: Template/Quantities/index.ctp:38
+#: Template/Users/index.ctp:42
+#: Template/Users/view.ctp:56
+msgid "Edit"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:58
+#: Template/Menus/index.ctp:45
+#: Template/Orders/index.ctp:70
+#: Template/Quantities/index.ctp:47
+#: Template/Users/index.ctp:51
+msgid "first"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:59
+#: Template/Menus/index.ctp:46
+#: Template/Orders/index.ctp:71
+#: Template/Quantities/index.ctp:48
+#: Template/Users/index.ctp:52
+msgid "previous"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:61
+#: Template/Menus/index.ctp:48
+#: Template/Orders/index.ctp:73
+#: Template/Quantities/index.ctp:50
+#: Template/Users/index.ctp:54
+msgid "next"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:62
+#: Template/Menus/index.ctp:49
+#: Template/Orders/index.ctp:74
+#: Template/Quantities/index.ctp:51
+#: Template/Users/index.ctp:55
+msgid "last"
+msgstr ""
+
+#: Template/MenuItems/index.ctp:64
+#: Template/Menus/index.ctp:51
+#: Template/Orders/index.ctp:76
+#: Template/Quantities/index.ctp:53
+#: Template/Users/index.ctp:57
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:12
+msgid "Delete Menu Item"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:14
+#: Template/Menus/add.ctp:12
+#: Template/Menus/edit.ctp:18
+#: Template/Menus/index.ctp:12
+#: Template/Menus/view.ctp:15
+#: Template/Quantities/edit.ctp:18
+#: Template/Quantities/index.ctp:12
+#: Template/Quantities/view.ctp:15
+msgid "New Menu Item"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:25
+msgid "Menu"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:29
+#: Template/Menus/view.ctp:53
+msgid "Menu Item Name"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:33
+#: Template/Menus/view.ctp:26
+#: Template/Menus/view.ctp:51
+#: Template/Orders/view.ctp:25
+#: Template/Users/view.ctp:42
+msgid "Id"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:37
+#: Template/Menus/view.ctp:54
+msgid "Menu Item Price"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:41
+#: Template/Menus/view.ctp:30
+#: Template/Menus/view.ctp:57
+#: Template/Orders/view.ctp:29
+#: Template/Orders/view.ctp:45
+#: Template/Quantities/view.ctp:31
+#: Template/Users/view.ctp:29
+#: Template/Users/view.ctp:44
+msgid "Created"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:45
+#: Template/Menus/view.ctp:34
+#: Template/Menus/view.ctp:58
+#: Template/Orders/view.ctp:33
+#: Template/Orders/view.ctp:46
+#: Template/Quantities/view.ctp:35
+#: Template/Users/view.ctp:33
+#: Template/Users/view.ctp:45
+msgid "Modified"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:49
+msgid "Image"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:54
+#: Template/Menus/view.ctp:55
+msgid "Menu Item Description"
+msgstr ""
+
+#: Template/MenuItems/view.ctp:58
+#: Template/Menus/view.ctp:43
+#: Template/Menus/view.ctp:56
+msgid "Other Details"
+msgstr ""
+
+#: Template/Menus/add.ctp:18
+msgid "Add Menu"
+msgstr ""
+
+#: Template/Menus/edit.ctp:24
+#: Template/Menus/view.ctp:10
+msgid "Edit Menu"
+msgstr ""
+
+#: Template/Menus/index.ctp:16
+msgid "Menus"
+msgstr ""
+
+#: Template/Menus/view.ctp:11
+msgid "Delete Menu"
+msgstr ""
+
+#: Template/Menus/view.ctp:22
+msgid "Menu Name"
+msgstr ""
+
+#: Template/Menus/view.ctp:39
+msgid "Menu Description"
+msgstr ""
+
+#: Template/Menus/view.ctp:47
+msgid "Related Menu Items"
+msgstr ""
+
+#: Template/Menus/view.ctp:52
+msgid "Menu Id"
+msgstr ""
+
+#: Template/Orders/add.ctp:10
+#: Template/Orders/edit.ctp:16
+#: Template/Orders/view.ctp:12
+#: Template/OrdersQuantities/add.ctp:11
+#: Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:12
+msgid "List Orders"
+msgstr ""
+
+#: Template/Orders/add.ctp:11
+#: Template/Orders/edit.ctp:17
+#: Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16
+msgid "List Users"
+msgstr ""
+
+#: Template/Orders/add.ctp:12
+#: Template/Orders/edit.ctp:18
+#: Template/Users/index.ctp:10
+msgid "New User"
+msgstr ""
+
+#: Template/Orders/add.ctp:20
+msgid "Add Order"
+msgstr ""
+
+#: Template/Orders/add.ctp:30
+msgid "Create"
+msgstr ""
+
+#: Template/Orders/edit.ctp:26
+#: Template/Orders/view.ctp:10
+msgid "Edit Order"
+msgstr ""
+
+#: Template/Orders/index.ctp:11
+msgid "New order"
+msgstr ""
+
+#: Template/Orders/index.ctp:13
+msgid "Add an article to order"
+msgstr ""
+
+#: Template/Orders/index.ctp:15
+msgid "View last order"
+msgstr ""
+
+#: Template/Orders/index.ctp:19
+msgid "Orders"
+msgstr ""
+
+#: Template/Orders/view.ctp:11
+msgid "Delete Order"
+msgstr ""
+
+#: Template/Orders/view.ctp:13
+#: Template/OrdersQuantities/add.ctp:12
+#: Template/Users/add.ctp:12
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:13
+msgid "New Order"
+msgstr ""
+
+#: Template/Orders/view.ctp:14
+#: Template/OrdersQuantities/add.ctp:14
+#: Template/Quantities/index.ctp:10
+msgid "Add article"
+msgstr ""
+
+#: Template/Orders/view.ctp:21
+msgid "User"
+msgstr ""
+
+#: Template/Orders/view.ctp:38
+msgid "Added articles"
+msgstr ""
+
+#: Template/Orders/view.ctp:43
+msgid "Item name"
+msgstr ""
+
+#: Template/Orders/view.ctp:44
+#: Template/Quantities/view.ctp:27
+msgid "Quantity"
+msgstr ""
+
+#: Template/OrdersQuantities/add.ctp:13
+#: Template/Quantities/edit.ctp:16
+msgid "List articles"
+msgstr ""
+
+#: Template/OrdersQuantities/add.ctp:20
+msgid "Add Orders Quantity"
+msgstr ""
+
+#: Template/OrdersQuantities/add.ctp:27
+msgid "Confirm"
+msgstr ""
+
+#: Template/Quantities/add.ctp:10
+msgid "Cancel"
+msgstr ""
+
+#: Template/Quantities/add.ctp:18
+msgid "Choose quantity"
+msgstr ""
+
+#: Template/Quantities/edit.ctp:24
+msgid "Edit Quantity"
+msgstr ""
+
+#: Template/Quantities/index.ctp:16
+msgid "Quantities"
+msgstr ""
+
+#: Template/Quantities/view.ctp:11
+msgid "Delete article"
+msgstr ""
+
+#: Template/Quantities/view.ctp:12
+msgid "List article"
+msgstr ""
+
+#: Template/Quantities/view.ctp:22
+msgid "Menu Item"
+msgstr ""
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr ""
+
+#: Template/Users/add.ctp:21
+msgid "password"
+msgstr ""
+
+#: Template/Users/edit.ctp:24
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr ""
+
+#: Template/Users/login.ctp:4
+msgid "To use this application, you must be logged in as a customer"
+msgstr ""
+
+#: Template/Users/view.ctp:10
+msgid "Edit profile"
+msgstr ""
+
+#: Template/Users/view.ctp:20
+msgid "Username"
+msgstr ""
+
+#: Template/Users/view.ctp:25
+msgid "Email"
+msgstr ""
+
+#: Template/Users/view.ctp:38
+msgid "Related orders"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+

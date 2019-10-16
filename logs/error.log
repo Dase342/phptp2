@@ -7715,3 +7715,501 @@ Exception Attributes: array (
 Request URL: /orders-quantities/
 
 
+2019-10-16 11:57:14 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "orders" with primary key [NULL]
+#0 F:\uniserver\UniServerZ\www\phptp1\src\Controller\OrdersController.php(56): Cake\ORM\Table->get(Array, Array)
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\OrdersController->view()
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OrdersController))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /orders/view/
+Referer URL: http://localhost/phptp1/orders/view/7
+
+
+2019-10-16 14:21:14 Error: [Error] Class 'App\Controller\I18n' not found
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\AppController->changeLang('en_US')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /users/change-lang/en_US
+Referer URL: http://localhost/phptp1/users
+
+
+2019-10-16 14:31:14 Error: [IntlException] Constructor failed in F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php on line 70
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(70): MessageFormatter->__construct('fr_CA', '{0, nombre, #, ...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(43): Cake\I18n\Formatter\IcuFormatter->_formatMessage('fr_CA', '{0, nombre, #, ...', Array)
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Translator.php(86): Cake\I18n\Formatter\IcuFormatter->format('fr_CA', '{0, nombre, #, ...', Array)
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\functions.php(88): Cake\I18n\Translator->translate('{0,number,#,###...', Array)
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Number.php(92): __d('cake', '{0,number,#,###...', 7.0761413574219)
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Panel\TimerPanel.php(125): Cake\I18n\Number::toReadableSize(7419872)
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\ToolbarService.php(245): DebugKit\Panel\TimerPanel->summary()
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+Request URL: /orders/change-lang/fr_CA
+Referer URL: http://localhost/phptp1/
+2019-10-16 14:31:19 Error: [IntlException] Constructor failed in F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php on line 70
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(70): MessageFormatter->__construct('fr_CA', '{0, nombre, #, ...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(43): Cake\I18n\Formatter\IcuFormatter->_formatMessage('fr_CA', '{0, nombre, #, ...', Array)
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Translator.php(86): Cake\I18n\Formatter\IcuFormatter->format('fr_CA', '{0, nombre, #, ...', Array)
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\functions.php(88): Cake\I18n\Translator->translate('{0,number,#,###...', Array)
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Number.php(92): __d('cake', '{0,number,#,###...', 7.0273208618164)
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Panel\TimerPanel.php(125): Cake\I18n\Number::toReadableSize(7368680)
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\ToolbarService.php(245): DebugKit\Panel\TimerPanel->summary()
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+Request URL: /orders/change-lang/fr_CA
+2019-10-16 14:31:31 Error: [IntlException] Constructor failed in F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php on line 70
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(70): MessageFormatter->__construct('fr_CA', '{0, nombre, #, ...')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Formatter\IcuFormatter.php(43): Cake\I18n\Formatter\IcuFormatter->_formatMessage('fr_CA', '{0, nombre, #, ...', Array)
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Translator.php(86): Cake\I18n\Formatter\IcuFormatter->format('fr_CA', '{0, nombre, #, ...', Array)
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\functions.php(88): Cake\I18n\Translator->translate('{0,number,#,###...', Array)
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\I18n\Number.php(92): __d('cake', '{0,number,#,###...', 7.0249328613281)
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Panel\TimerPanel.php(125): Cake\I18n\Number::toReadableSize(7366176)
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\ToolbarService.php(245): DebugKit\Panel\TimerPanel->summary()
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+Request URL: /users/change-lang/fr_CA
+Referer URL: http://localhost/phptp1/users
+2019-10-16 17:02:43 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 60
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:02:43 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 63
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:02:43 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 74
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:02:43 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 77
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:03:00 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::__link does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 60
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:03:00 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 63
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:03:00 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 74
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 17:03:00 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::link__ does not exist in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\View\Helper.php, line 117]
+Request URL: /users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\View\Helper::__call() - CORE\src\View\Helper.php, line 117
+include - APP/Template\Layout\default.ctp, line 77
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 18:23:15 Error: Fatal Error (1): Trait 'App\Model\Entity\TranslateTrait' not found in [F:\uniserver\UniServerZ\www\phptp1\src\Model\Entity\MenuItem.php, line 34]
+Request URL: /menu-items/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2019-10-16 18:23:15 Error: [Cake\Error\FatalErrorException] Trait 'App\Model\Entity\TranslateTrait' not found in F:\uniserver\UniServerZ\www\phptp1\src\Model\Entity\MenuItem.php on line 34
+Stack Trace:
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'App\\Mode...', 'F:\\uniserver\\Un...', 34)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+Request URL: /menu-items/view/1
+2019-10-16 18:31:52 Error: [Error] Class 'App\Controller\I18n' not found
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\MenuItemsController->index()
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MenuItemsController))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /menu-items/
+
+
+2019-10-16 19:07:52 Error: [Error] Call to a member function find() on bool
+#0 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\MenuItemsController->view('1')
+#1 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MenuItemsController))
+#3 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver\UniServerZ\www\phptp1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /menu-items/view/1
+
+
+2019-10-16 19:07:53 Warning: Warning (512): Unable to emit headers. Headers sent in file=F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /menu-items/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 19:07:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /menu-items/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 19:07:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /menu-items/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-16 19:07:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [F:\uniserver\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /menu-items/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+

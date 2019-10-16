@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\I18n\I18n;
 
 /**
  * MenuItems Controller
@@ -37,6 +38,9 @@ class MenuItemsController extends AppController
         $menuItems = $this->paginate($this->MenuItems);
 
         $this->set(compact('menuItems'));
+
+        
+
     }
 
     /**
@@ -48,9 +52,12 @@ class MenuItemsController extends AppController
      */
     public function view($id = null)
     {
+
+
         $menuItem = $this->MenuItems->get($id, [
             'contain' => ['Menus', 'Files']
         ]);
+  
 
         $this->set('menuItem', $menuItem);
     }

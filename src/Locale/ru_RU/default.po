@@ -1,0 +1,570 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-16 17:22+0000\n"
+"PO-Revision-Date: 2019-10-16 13:23-0400\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#: Controller/MenuItemsController.php:70 Controller/MenuItemsController.php:148
+msgid "The menu item has been saved."
+msgstr "Пункт меню был сохранен."
+
+#: Controller/MenuItemsController.php:74 Controller/MenuItemsController.php:152
+msgid "The menu item could not be saved. Please, try again."
+msgstr "Пункт меню не может быть сохранен. Пожалуйста, попробуйте еще раз."
+
+#: Controller/MenuItemsController.php:103
+msgid "File has been uploaded and inserted successfully."
+msgstr "Файл был загружен и вставлен успешно."
+
+#: Controller/MenuItemsController.php:107
+#: Controller/MenuItemsController.php:110
+msgid "Unable to upload file, please try again."
+msgstr "Невозможно загрузить файл, пожалуйста, попробуйте еще раз."
+
+#: Controller/MenuItemsController.php:113
+msgid "File is not an image."
+msgstr "Файл не является изображением."
+
+#: Controller/MenuItemsController.php:117
+msgid "Please choose a file to upload."
+msgstr "Пожалуйста, выберите файл для загрузки."
+
+#: Controller/MenuItemsController.php:171
+msgid "The menu item has been deleted."
+msgstr "Пункт меню был удален."
+
+#: Controller/MenuItemsController.php:173
+msgid "The menu item could not be deleted. Please, try again."
+msgstr "Пункт меню не может быть удален. Пожалуйста, попробуйте еще раз."
+
+#: Controller/MenusController.php:54 Controller/MenusController.php:78
+msgid "The menu has been saved."
+msgstr "Меню было сохранено."
+
+#: Controller/MenusController.php:58 Controller/MenusController.php:82
+msgid "The menu could not be saved. Please, try again."
+msgstr "Меню не может быть сохранено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/MenusController.php:99
+msgid "The menu has been deleted."
+msgstr "Меню было удалено."
+
+#: Controller/MenusController.php:101
+msgid "The menu could not be deleted. Please, try again."
+msgstr "Меню не может быть удалено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/OrdersController.php:96 Controller/OrdersController.php:123
+#: Controller/OrdersQuantitiesController.php:56
+msgid "The order has been saved."
+msgstr "Заказ был сохранен."
+
+#: Controller/OrdersController.php:100 Controller/OrdersController.php:127
+#: Controller/OrdersQuantitiesController.php:60
+msgid "The order could not be saved. Please, try again."
+msgstr "Заказ не может быть сохранен. Пожалуйста, попробуйте еще раз."
+
+#: Controller/OrdersController.php:146
+msgid "The order has been deleted."
+msgstr "Заказ был удален."
+
+#: Controller/OrdersController.php:148
+msgid "The order could not be deleted. Please, try again."
+msgstr "Заказ не может быть удален. Пожалуйста, попробуйте еще раз."
+
+#: Controller/OrdersQuantitiesController.php:91
+msgid "The orders quantity has been saved."
+msgstr "Количество заказов было сохранено."
+
+#: Controller/OrdersQuantitiesController.php:95
+msgid "The orders quantity could not be saved. Please, try again."
+msgstr ""
+"Количество заказов не может быть сохранено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/OrdersQuantitiesController.php:112
+msgid "The orders quantity has been deleted."
+msgstr "Количество заказов было удалено."
+
+#: Controller/OrdersQuantitiesController.php:114
+msgid "The orders quantity could not be deleted. Please, try again."
+msgstr ""
+"Количество заказов не может быть удалено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/QuantitiesController.php:57
+#: Controller/QuantitiesController.php:82
+msgid "The quantity has been saved."
+msgstr "Количество было сохранено."
+
+#: Controller/QuantitiesController.php:61
+#: Controller/QuantitiesController.php:86
+msgid "The quantity could not be saved. Please, try again."
+msgstr "Количество не может быть сохранено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/QuantitiesController.php:104
+msgid "The quantity has been deleted."
+msgstr "Количество было удалено."
+
+#: Controller/QuantitiesController.php:106
+msgid "The quantity could not be deleted. Please, try again."
+msgstr "Количество не может быть удалено. Пожалуйста, попробуйте еще раз."
+
+#: Controller/UsersController.php:62 Controller/UsersController.php:90
+msgid "The user has been saved."
+msgstr "Пользователь был сохранен."
+
+#: Controller/UsersController.php:67 Controller/UsersController.php:94
+msgid "The user could not be saved. Please, try again."
+msgstr "Пользователь не может быть сохранен. Пожалуйста, попробуйте еще раз."
+
+#: Controller/UsersController.php:111
+msgid "The user has been deleted."
+msgstr "Пользователь был удален."
+
+#: Controller/UsersController.php:113
+msgid "The user could not be deleted. Please, try again."
+msgstr "Пользователь не может быть удален. Пожалуйста, попробуйте еще раз."
+
+#: Template/Layout/default.ctp:56
+msgid "Logout"
+msgstr "Выйти"
+
+#: Template/Layout/default.ctp:60
+msgid "Create account"
+msgstr "Регистрация"
+
+#: Template/Layout/default.ctp:63
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: Template/Layout/default.ctp:77
+msgid "About"
+msgstr "Около"
+
+#: Template/Layout/default.ctp:80
+msgid "Home"
+msgstr "Главная"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "ошибка"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "назад"
+
+#: Template/MenuItems/add.ctp:9 Template/MenuItems/edit.ctp:10
+#: Template/MenuItems/index.ctp:11 Template/MenuItems/index.ctp:31
+#: Template/MenuItems/view.ctp:10 Template/Menus/add.ctp:9
+#: Template/Menus/edit.ctp:9 Template/Menus/index.ctp:9
+#: Template/Menus/index.ctp:24 Template/Menus/view.ctp:9
+#: Template/Menus/view.ctp:59 Template/Orders/add.ctp:9
+#: Template/Orders/edit.ctp:9 Template/Orders/index.ctp:9
+#: Template/Orders/index.ctp:27 Template/Orders/view.ctp:9
+#: Template/Orders/view.ctp:47 Template/OrdersQuantities/add.ctp:9
+#: Template/Quantities/add.ctp:9 Template/Quantities/edit.ctp:9
+#: Template/Quantities/index.ctp:9 Template/Quantities/index.ctp:25
+#: Template/Quantities/view.ctp:9 Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9 Template/Users/index.ctp:9
+#: Template/Users/index.ctp:27 Template/Users/view.ctp:9
+#: Template/Users/view.ctp:46
+msgid "Actions"
+msgstr "действия"
+
+#: Template/MenuItems/add.ctp:10 Template/MenuItems/edit.ctp:17
+#: Template/MenuItems/view.ctp:13 Template/Menus/add.ctp:11
+#: Template/Menus/edit.ctp:17 Template/Menus/index.ctp:11
+#: Template/Menus/view.ctp:14 Template/Quantities/add.ctp:11
+#: Template/Quantities/edit.ctp:17 Template/Quantities/index.ctp:11
+#: Template/Quantities/view.ctp:14
+msgid "List Menu Items"
+msgstr "Список пунктов меню"
+
+#: Template/MenuItems/add.ctp:11 Template/MenuItems/edit.ctp:18
+#: Template/MenuItems/index.ctp:13 Template/MenuItems/view.ctp:15
+#: Template/Menus/add.ctp:10 Template/Menus/edit.ctp:16
+#: Template/Menus/view.ctp:12
+msgid "List Menus"
+msgstr "Список меню"
+
+#: Template/MenuItems/add.ctp:12 Template/MenuItems/edit.ctp:19
+#: Template/MenuItems/view.ctp:16 Template/Menus/index.ctp:10
+#: Template/Menus/view.ctp:13
+msgid "New Menu"
+msgstr "Новое меню"
+
+#: Template/MenuItems/add.ctp:13 Template/MenuItems/edit.ctp:20
+#: Template/MenuItems/index.ctp:14 Template/MenuItems/view.ctp:17
+#: Template/Orders/add.ctp:13 Template/Orders/edit.ctp:19
+msgid "List Quantities"
+msgstr "Список количеств"
+
+#: Template/MenuItems/add.ctp:14 Template/MenuItems/edit.ctp:21
+#: Template/MenuItems/view.ctp:18 Template/Orders/add.ctp:14
+#: Template/Orders/edit.ctp:20
+msgid "New Quantity"
+msgstr "Новое количество"
+
+#: Template/MenuItems/add.ctp:20
+msgid "Add Menu Item"
+msgstr "Добавить пункт меню"
+
+#: Template/MenuItems/add.ctp:30 Template/MenuItems/edit.ctp:38
+#: Template/Menus/add.ctp:25 Template/Menus/edit.ctp:31
+#: Template/Orders/edit.ctp:32 Template/Quantities/add.ctp:24
+#: Template/Quantities/edit.ctp:30 Template/Users/add.ctp:27
+#: Template/Users/edit.ctp:32
+msgid "Submit"
+msgstr "представить"
+
+#: Template/MenuItems/add_img.ctp:13
+msgid "Upload File"
+msgstr "Загрузить файл"
+
+#: Template/MenuItems/edit.ctp:12 Template/MenuItems/index.ctp:48
+#: Template/Menus/edit.ctp:11 Template/Menus/index.ctp:37
+#: Template/Menus/view.ctp:74 Template/Orders/edit.ctp:11
+#: Template/Orders/index.ctp:44 Template/Orders/index.ctp:56
+#: Template/Orders/view.ctp:60 Template/Quantities/edit.ctp:11
+#: Template/Quantities/index.ctp:39 Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:43 Template/Users/view.ctp:57
+msgid "Delete"
+msgstr "удалять"
+
+#: Template/MenuItems/edit.ctp:14 Template/MenuItems/index.ctp:48
+#: Template/MenuItems/view.ctp:12 Template/Menus/edit.ctp:13
+#: Template/Menus/index.ctp:37 Template/Menus/view.ctp:11
+#: Template/Menus/view.ctp:74 Template/Orders/edit.ctp:13
+#: Template/Orders/index.ctp:44 Template/Orders/index.ctp:56
+#: Template/Orders/view.ctp:11 Template/Orders/view.ctp:60
+#: Template/Quantities/edit.ctp:13 Template/Quantities/index.ctp:39
+#: Template/Quantities/view.ctp:11 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:43 Template/Users/view.ctp:57
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Вы уверены, что хотите удалить # {0} ?"
+
+#: Template/MenuItems/edit.ctp:27 Template/MenuItems/view.ctp:11
+msgid "Edit Menu Item"
+msgstr "Редактировать пункт меню"
+
+#: Template/MenuItems/index.ctp:15 Template/Quantities/view.ctp:13
+msgid "New article"
+msgstr "Новая статья"
+
+#: Template/MenuItems/index.ctp:16
+msgid "Add image"
+msgstr "Добавить изображение"
+
+#: Template/MenuItems/index.ctp:20
+msgid "Menu Items"
+msgstr "Пункты меню"
+
+#: Template/MenuItems/index.ctp:46 Template/Menus/index.ctp:35
+#: Template/Menus/view.ctp:72 Template/Orders/index.ctp:42
+#: Template/Orders/index.ctp:54 Template/Orders/view.ctp:58
+#: Template/Quantities/index.ctp:37 Template/Users/index.ctp:41
+#: Template/Users/view.ctp:55
+msgid "View"
+msgstr "Посмотреть"
+
+#: Template/MenuItems/index.ctp:47 Template/Menus/index.ctp:36
+#: Template/Menus/view.ctp:73 Template/Orders/index.ctp:43
+#: Template/Orders/index.ctp:55 Template/Orders/view.ctp:59
+#: Template/Quantities/index.ctp:38 Template/Users/index.ctp:42
+#: Template/Users/view.ctp:56
+msgid "Edit"
+msgstr "редактировать"
+
+#: Template/MenuItems/index.ctp:58 Template/Menus/index.ctp:45
+#: Template/Orders/index.ctp:70 Template/Quantities/index.ctp:47
+#: Template/Users/index.ctp:51
+msgid "first"
+msgstr "первый"
+
+#: Template/MenuItems/index.ctp:59 Template/Menus/index.ctp:46
+#: Template/Orders/index.ctp:71 Template/Quantities/index.ctp:48
+#: Template/Users/index.ctp:52
+msgid "previous"
+msgstr "предыдущий"
+
+#: Template/MenuItems/index.ctp:61 Template/Menus/index.ctp:48
+#: Template/Orders/index.ctp:73 Template/Quantities/index.ctp:50
+#: Template/Users/index.ctp:54
+msgid "next"
+msgstr "следующий"
+
+#: Template/MenuItems/index.ctp:62 Template/Menus/index.ctp:49
+#: Template/Orders/index.ctp:74 Template/Quantities/index.ctp:51
+#: Template/Users/index.ctp:55
+msgid "last"
+msgstr "прошлой"
+
+#: Template/MenuItems/index.ctp:64 Template/Menus/index.ctp:51
+#: Template/Orders/index.ctp:76 Template/Quantities/index.ctp:53
+#: Template/Users/index.ctp:57
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Страница {{page}} из {{pages}}, показывающая {{current}} записей из "
+"{{count}} итого"
+
+#: Template/MenuItems/view.ctp:12
+msgid "Delete Menu Item"
+msgstr "Удалить пункт меню"
+
+#: Template/MenuItems/view.ctp:14 Template/Menus/add.ctp:12
+#: Template/Menus/edit.ctp:18 Template/Menus/index.ctp:12
+#: Template/Menus/view.ctp:15 Template/Quantities/edit.ctp:18
+#: Template/Quantities/index.ctp:12 Template/Quantities/view.ctp:15
+msgid "New Menu Item"
+msgstr "Новый пункт меню"
+
+#: Template/MenuItems/view.ctp:25
+msgid "Menu"
+msgstr "Меню"
+
+#: Template/MenuItems/view.ctp:29 Template/Menus/view.ctp:53
+msgid "Menu Item Name"
+msgstr "Название пункта меню"
+
+#: Template/MenuItems/view.ctp:33 Template/Menus/view.ctp:26
+#: Template/Menus/view.ctp:51 Template/Orders/view.ctp:25
+#: Template/Users/view.ctp:42
+msgid "Id"
+msgstr "Я бы"
+
+#: Template/MenuItems/view.ctp:37 Template/Menus/view.ctp:54
+msgid "Menu Item Price"
+msgstr "Цена пункта меню"
+
+#: Template/MenuItems/view.ctp:41 Template/Menus/view.ctp:30
+#: Template/Menus/view.ctp:57 Template/Orders/view.ctp:29
+#: Template/Orders/view.ctp:45 Template/Quantities/view.ctp:31
+#: Template/Users/view.ctp:29 Template/Users/view.ctp:44
+msgid "Created"
+msgstr "созданный"
+
+#: Template/MenuItems/view.ctp:45 Template/Menus/view.ctp:34
+#: Template/Menus/view.ctp:58 Template/Orders/view.ctp:33
+#: Template/Orders/view.ctp:46 Template/Quantities/view.ctp:35
+#: Template/Users/view.ctp:33 Template/Users/view.ctp:45
+msgid "Modified"
+msgstr "модифицированный"
+
+#: Template/MenuItems/view.ctp:49
+msgid "Image"
+msgstr "Образ"
+
+#: Template/MenuItems/view.ctp:54 Template/Menus/view.ctp:55
+msgid "Menu Item Description"
+msgstr "Описание пункта меню"
+
+#: Template/MenuItems/view.ctp:58 Template/Menus/view.ctp:43
+#: Template/Menus/view.ctp:56
+msgid "Other Details"
+msgstr "Другие детали"
+
+#: Template/Menus/add.ctp:18
+msgid "Add Menu"
+msgstr "Добавить меню"
+
+#: Template/Menus/edit.ctp:24 Template/Menus/view.ctp:10
+msgid "Edit Menu"
+msgstr "Редактировать меню"
+
+#: Template/Menus/index.ctp:16
+msgid "Menus"
+msgstr "меню"
+
+#: Template/Menus/view.ctp:11
+msgid "Delete Menu"
+msgstr "Удалить меню"
+
+#: Template/Menus/view.ctp:22
+msgid "Menu Name"
+msgstr "Название меню"
+
+#: Template/Menus/view.ctp:39
+msgid "Menu Description"
+msgstr "Описание меню"
+
+#: Template/Menus/view.ctp:47
+msgid "Related Menu Items"
+msgstr "Связанные пункты меню"
+
+#: Template/Menus/view.ctp:52
+msgid "Menu Id"
+msgstr "Идентификатор меню"
+
+#: Template/Orders/add.ctp:10 Template/Orders/edit.ctp:16
+#: Template/Orders/view.ctp:12 Template/OrdersQuantities/add.ctp:11
+#: Template/Users/add.ctp:11 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11 Template/Users/view.ctp:12
+msgid "List Orders"
+msgstr "Список заказов"
+
+#: Template/Orders/add.ctp:11 Template/Orders/edit.ctp:17
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16
+msgid "List Users"
+msgstr "Список пользователей"
+
+#: Template/Orders/add.ctp:12 Template/Orders/edit.ctp:18
+#: Template/Users/index.ctp:10
+msgid "New User"
+msgstr "Новый пользователь"
+
+#: Template/Orders/add.ctp:20
+msgid "Add Order"
+msgstr "Добавить заказ"
+
+#: Template/Orders/add.ctp:30
+msgid "Create"
+msgstr "Создайте"
+
+#: Template/Orders/edit.ctp:26 Template/Orders/view.ctp:10
+msgid "Edit Order"
+msgstr "Редактировать заказ"
+
+#: Template/Orders/index.ctp:11
+msgid "New order"
+msgstr "Новый порядок"
+
+#: Template/Orders/index.ctp:13
+msgid "Add an article to order"
+msgstr "Добавить статью на заказ"
+
+#: Template/Orders/index.ctp:15
+msgid "View last order"
+msgstr "Посмотреть последний заказ"
+
+#: Template/Orders/index.ctp:19
+msgid "Orders"
+msgstr "заказы"
+
+#: Template/Orders/index.ctp:20
+msgid "An order must be created first to add an article"
+msgstr "Сначала необходимо создать заказ, чтобы добавить статью"
+
+#: Template/Orders/view.ctp:11
+msgid "Delete Order"
+msgstr "Удалить заказ"
+
+#: Template/Orders/view.ctp:13 Template/OrdersQuantities/add.ctp:12
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12 Template/Users/view.ctp:13
+msgid "New Order"
+msgstr "Новый порядок"
+
+#: Template/Orders/view.ctp:14 Template/OrdersQuantities/add.ctp:14
+#: Template/Quantities/index.ctp:10
+msgid "Add article"
+msgstr "Добавить статью"
+
+#: Template/Orders/view.ctp:21
+msgid "User"
+msgstr "пользователь"
+
+#: Template/Orders/view.ctp:38
+msgid "Added articles"
+msgstr "Добавлены статьи"
+
+#: Template/Orders/view.ctp:43
+msgid "Item name"
+msgstr "Имя элемента"
+
+#: Template/Orders/view.ctp:44 Template/Quantities/view.ctp:27
+msgid "Quantity"
+msgstr "Количество"
+
+#: Template/OrdersQuantities/add.ctp:13 Template/Quantities/edit.ctp:16
+msgid "List articles"
+msgstr "Список статей"
+
+#: Template/OrdersQuantities/add.ctp:20
+msgid "Add Orders Quantity"
+msgstr "Добавить количество заказов"
+
+#: Template/OrdersQuantities/add.ctp:27
+msgid "Confirm"
+msgstr "подтвердить"
+
+#: Template/Quantities/add.ctp:10
+msgid "Cancel"
+msgstr "Отмена"
+
+#: Template/Quantities/add.ctp:18
+msgid "Choose quantity"
+msgstr "Выберите количество"
+
+#: Template/Quantities/edit.ctp:24
+msgid "Edit Quantity"
+msgstr "Изменить количество"
+
+#: Template/Quantities/index.ctp:16
+msgid "Quantities"
+msgstr "Количества"
+
+#: Template/Quantities/view.ctp:11
+msgid "Delete article"
+msgstr "Удалить статью"
+
+#: Template/Quantities/view.ctp:12
+msgid "List article"
+msgstr "Список статей"
+
+#: Template/Quantities/view.ctp:22
+msgid "Menu Item"
+msgstr "Пункт меню"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "Добавить пользователя"
+
+#: Template/Users/add.ctp:21
+msgid "password"
+msgstr "пароль"
+
+#: Template/Users/edit.ctp:24
+msgid "Edit User"
+msgstr "Редактировать пользователя"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "пользователей"
+
+#: Template/Users/login.ctp:4
+msgid "To use this application, you must be logged in as a customer"
+msgstr ""
+"Чтобы использовать это приложение, вы должны войти в систему как клиент"
+
+#: Template/Users/view.ctp:10
+msgid "Edit profile"
+msgstr "Редактировать профиль"
+
+#: Template/Users/view.ctp:20
+msgid "Username"
+msgstr "имя пользователя"
+
+#: Template/Users/view.ctp:25
+msgid "Email"
+msgstr "Электронное письмо"
+
+#: Template/Users/view.ctp:38
+msgid "Related orders"
+msgstr "Связанные заказы"
+
+#~ msgid "The requested address {0} was not found on this server."
+#~ msgstr "Запрошенный адрес {0} не найден на этом сервере."
+
+#~ msgid "An Internal Error Has Occurred"
+#~ msgstr "Произошла внутренняя ошибка"

@@ -1,0 +1,314 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-16 17:29+0000\n"
+"PO-Revision-Date: 2019-10-16 13:30-0400\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru_RU\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#: Template/Error/error400.ctp:36 Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "ошибка"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "Запрошенный адрес {0} не найден на этом сервере."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "Произошла внутренняя ошибка"
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr "Вы не авторизованы для доступа к этому местоположению."
+
+#: Controller/Component/CsrfComponent.php:182
+#: Http/Middleware/CsrfProtectionMiddleware.php:227
+msgid "Missing CSRF token cookie"
+msgstr "Отсутствует файл маркера CSRF"
+
+#: Controller/Component/CsrfComponent.php:186
+#: Http/Middleware/CsrfProtectionMiddleware.php:231
+msgid "CSRF token mismatch."
+msgstr "Несоответствие токена CSRF."
+
+#: Error/ExceptionRenderer.php:301
+msgid "Not Found"
+msgstr "не обнаружена"
+
+#: Error/ExceptionRenderer.php:303
+msgid "An Internal Error Has Occurred."
+msgstr "Произошла внутренняя ошибка."
+
+#: Http/Response.php:2653
+msgid "The requested file contains `..` and will not be read."
+msgstr "Запрашиваемый файл содержит `..` и не будет прочитан."
+
+#: Http/Response.php:2674
+msgid "The requested file was not found"
+msgstr "Запрашиваемый файл не найден"
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr "{0, number, #, ###. ##} КБ"
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr "{0, number, #, ###. ##} МБ"
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr "{0, number, #, ###. ##} ГБ"
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr "{0, число, #, ###. ##} ТБ"
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] "{0, число, целое число} байт"
+msgstr[1] "{0, число, целое число} байт"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr "{0} с этого момента"
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr "{0} назад"
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr "{0} после"
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr "{0} до"
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr "прямо сейчас"
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr "около секунды назад"
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr "около минуты назад"
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr "около часа назад"
+
+#: I18n/RelativeTimeFormatter.php:154 I18n/RelativeTimeFormatter.php:332
+msgid "about a day ago"
+msgstr "около дня назад"
+
+#: I18n/RelativeTimeFormatter.php:155 I18n/RelativeTimeFormatter.php:333
+msgid "about a week ago"
+msgstr "около недели назад"
+
+#: I18n/RelativeTimeFormatter.php:156 I18n/RelativeTimeFormatter.php:334
+msgid "about a month ago"
+msgstr "Около месяца назад"
+
+#: I18n/RelativeTimeFormatter.php:157 I18n/RelativeTimeFormatter.php:335
+msgid "about a year ago"
+msgstr "около года назад"
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr "примерно через секунду"
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr "примерно через минуту"
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr "примерно через час"
+
+#: I18n/RelativeTimeFormatter.php:171 I18n/RelativeTimeFormatter.php:346
+msgid "in about a day"
+msgstr "примерно через день"
+
+#: I18n/RelativeTimeFormatter.php:172 I18n/RelativeTimeFormatter.php:347
+msgid "in about a week"
+msgstr "примерно через неделю"
+
+#: I18n/RelativeTimeFormatter.php:173 I18n/RelativeTimeFormatter.php:348
+msgid "in about a month"
+msgstr "примерно через месяц"
+
+#: I18n/RelativeTimeFormatter.php:174 I18n/RelativeTimeFormatter.php:349
+msgid "in about a year"
+msgstr "примерно через год"
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr "сегодня"
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr "%s назад"
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr "на %s"
+
+#: I18n/RelativeTimeFormatter.php:47 I18n/RelativeTimeFormatter.php:126
+#: I18n/RelativeTimeFormatter.php:316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] "{0} год"
+msgstr[1] "{0} год"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:51 I18n/RelativeTimeFormatter.php:129
+#: I18n/RelativeTimeFormatter.php:319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] "{0} месяц"
+msgstr[1] "{0} месяц"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:57 I18n/RelativeTimeFormatter.php:132
+#: I18n/RelativeTimeFormatter.php:322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] "{0} неделя"
+msgstr[1] "{0} неделя"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:59 I18n/RelativeTimeFormatter.php:135
+#: I18n/RelativeTimeFormatter.php:325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] "{0} день"
+msgstr[1] "{0} день"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:64 I18n/RelativeTimeFormatter.php:138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] "{0} час"
+msgstr[1] "{0} час"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:68 I18n/RelativeTimeFormatter.php:141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] "{0} минута"
+msgstr[1] "{0} минута"
+msgstr[2] ""
+
+#: I18n/RelativeTimeFormatter.php:72 I18n/RelativeTimeFormatter.php:144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] "{0} второй"
+msgstr[1] "{0} второй"
+msgstr[2] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr "Это значение уже используется"
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr "Это значение не существует"
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr "Количество не соответствует {0} {1}"
+
+#: Utility/Text.php:934
+msgid "and"
+msgstr "а также"
+
+#: Validation/Validator.php:2436 View/Form/ArrayContext.php:226
+msgid "This field is required"
+msgstr "Это поле обязательно к заполнению"
+
+#: Validation/Validator.php:2458
+msgid "This field cannot be left empty"
+msgstr "Это поле нельзя оставлять пустым"
+
+#: Validation/Validator.php:2608
+msgid "The provided value is invalid"
+msgstr "Предоставленное значение недействительно"
+
+#: View/Helper/FormHelper.php:1109
+msgid "Edit {0}"
+msgstr "Редактировать {0}"
+
+#: View/Helper/FormHelper.php:1111
+msgid "New {0}"
+msgstr "Новый {0}"
+
+#: View/Helper/FormHelper.php:2030
+msgid "Submit"
+msgstr "представить"
+
+#: View/Helper/HtmlHelper.php:819
+msgid "Home"
+msgstr "Главная"
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr "январь"
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr "февраль"
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr "марш"
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr "апрель"
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr "май"
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr "июнь"
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr "июль"
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr "августейший"
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr "сентябрь"
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr "октября"
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr "ноябрь"
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr "Декабрь"

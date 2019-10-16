@@ -6,6 +6,7 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+
 /**
  * MenuItems Model
  *
@@ -41,6 +42,7 @@ class MenuItemsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('Translate', ['fields' => ['menu_item_description']]);
 
         $this->belongsTo('Menus', [
             'foreignKey' => 'menu_id',
@@ -53,6 +55,7 @@ class MenuItemsTable extends Table
         $this->hasMany('Quantities', [
             'foreignKey' => 'menu_item_id'
         ]);
+       
     }
 
     /**

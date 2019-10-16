@@ -53,22 +53,31 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             echo $this->Html->link($user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]);
                             echo "</li>";
                             echo "<li>";
-                            echo $this->Html->link('Logout', ['controller' => 'Users', 'action' => 'logout']);
+                            echo $this->Html->link(__('Logout'), ['controller' => 'Users', 'action' => 'logout']);
                             echo "</li>";
                         } else {
                             echo "<li>";
-                            echo $this->Html->link('Create account', ['controller' => 'Users', 'action' => 'add']);
+                            echo $this->Html->link(__('Create account'), ['controller' => 'Users', 'action' => 'add']);
                             echo "</li>";
                             echo "<li>";
-                            echo $this->Html->link('Login', ['controller' => 'Users', 'action' => 'login']);
+                            echo $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login']);
                             echo "</li>";
                         }
                         ?>
-                        <li>
-                        <?php echo $this->Html->link('About',array('controller'=>'pages','action'=>'display','about')) ?>
+                         <li>
+                        <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
                         </li>
                         <li>
-                        <?php echo $this->Html->link('Home',array('controller'=>'orders','action'=>'index')) ?>
+                        <?php echo $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?>
+                        </li>
+                        <li>
+                        <?php echo $this->Html->link('русский', ['action' => 'changeLang', 'ru_RU'], ['escape' => false]) ?>
+                        </li>
+                        <li>
+                        <?php echo $this->Html->link(__('About'),array('controller'=>'pages','action'=>'display','about')) ?>
+                        </li>
+                        <li>
+                        <?php echo $this->Html->link(__('Home'),array('controller'=>'orders','action'=>'index')) ?>
                         </li>
                     
   

@@ -17,7 +17,7 @@
 </nav>
 <div class="orders index large-9 medium-8 columns content">
     <h3><?= __('Orders') ?></h3>
-    <p>An order must be created first to add an article</p>
+    <p><?= __('An order must be created first to add an article')?></p>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
