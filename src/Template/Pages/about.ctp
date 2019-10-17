@@ -30,6 +30,14 @@
 		Un administrateur a accès a tout. L'envoie d'email utilise davmail.<br>
 		Voici quelques comptes utilisables : <br>nom: admin pass: admin <br> nom: test pass: test <br>
 		 </p>
+		 <h1>étape a suivre</h1>
+		 <p>1. Se connecter avec test2 en utilisant le mot de passe test2.<br>
+		 2. Cliquer sur view et puis sur home.<br>
+		 3. Cliquer sur francais, ensuite русский, puis anglais.<br>
+		 4. Cliquer sur New order puis create.<br>
+		 5. Cliquer sur add an article to order.<br>
+		 6. Choisir wac poulet dans la liste deroulante.<br>
+		 6. Mettre 2 dans la quantité puis cliquer sur submit</p>
 		
 	
 

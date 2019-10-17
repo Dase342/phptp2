@@ -36,7 +36,7 @@ class QuantitiesTable extends Table
         parent::initialize($config);
 
         $this->setTable('quantities');
-        $this->setDisplayField( 'menu_item');
+        $this->setDisplayField('quantity');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
