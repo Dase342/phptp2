@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 16, 2019 at 03:44 AM
+-- Generation Time: Oct 17, 2019 at 02:12 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.9
 
@@ -49,6 +49,37 @@ INSERT INTO `files` (`id`, `name`, `path`, `created`, `modified`, `status`) VALU
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `i18n`
+--
+
+CREATE TABLE `i18n` (
+  `id` int(11) NOT NULL,
+  `locale` varchar(6) COLLATE utf8_unicode_ci NOT NULL,
+  `model` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `foreign_key` int(10) NOT NULL,
+  `field` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `content` text COLLATE utf8_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `i18n`
+--
+
+INSERT INTO `i18n` (`id`, `locale`, `model`, `foreign_key`, `field`, `content`) VALUES
+(2, 'fr_CA', 'MenuItems', 1, 'menu_item_description', 'Deux boulettes de viandes avec 3 pain combiné avec de la lettus, fromage et sauce spécial Big wac.'),
+(4, 'fr_CA', 'MenuItems', 2, 'menu_item_description', 'Sandwich au poulet frit avec lettuce et sauce spécial fait par un humain.'),
+(5, 'fr_CA', 'MenuItems', 4, 'menu_item_description', 'C\'est halal.'),
+(6, 'fr_CA', 'MenuItems', 4, 'other_details', 'Peux contenir du poisson'),
+(13, 'ru_RU', 'MenuItems', 1, 'menu_item_description', 'Две фрикадельки с 3-мя хлебом в сочетании с сыром Леттус, сыром и специальным соусом Big wac.'),
+(14, 'ru_RU', 'MenuItems', 2, 'menu_item_description', 'Жареный куриный сэндвич с салатом и специальным соусом, приготовленным человеком.'),
+(15, 'ru_RU', 'MenuItems', 4, 'menu_item_description', 'Это халяль.'),
+(17, 'ru_RU', 'MenuItems', 4, 'other_details', 'Может держать рыбу'),
+(18, 'ru_RU', 'Menus', 1, 'menu_description', 'Официальное меню Вакдональда.'),
+(19, 'fr_CA', 'Menus', 1, 'menu_description', 'Menu officiel du Wacdonald.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `menus`
 --
 
@@ -66,7 +97,7 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`id`, `menu_name`, `created`, `modified`, `menu_description`, `other_details`) VALUES
-(1, 'Wacdonald', '2019-08-30', '2019-08-30', 'Menu officiel du Wacdonald.', NULL);
+(1, 'Wacdonald', '2019-08-30', '2019-08-30', 'Wacdonald\'s official menu.', NULL);
 
 -- --------------------------------------------------------
 
@@ -91,9 +122,9 @@ CREATE TABLE `menu_items` (
 --
 
 INSERT INTO `menu_items` (`id`, `menu_id`, `menu_item_name`, `menu_item_price`, `menu_item_description`, `other_details`, `created`, `modified`, `files_id`) VALUES
-(1, 1, 'Big wac', 7.00, 'Deux boulettes de viandes avec 3 pain combiné avec de la lettus, fromage et sauce spécial Big wac.', '', '2019-08-30', '2019-10-16', 13),
-(2, 1, 'wac poulet', 5.00, 'Sandwich au poulet frit avec lettus et sauce spécial fait par un homme.', '', '2019-08-30', '2019-10-16', 14),
-(4, 1, 'Filet de poisson', 7.99, 'C\'est halal.', 'Peut contenir des traces de poisson.', '2019-09-11', '2019-09-11', 0),
+(1, 1, 'Big wac', 7.00, 'Two patties with 3 bread combined with lettuce, cheese and special sauce Big wac.', '', '2019-08-30', '2019-10-16', 13),
+(2, 1, 'wac poulet', 5.00, 'Fried chicken sandwich with lettuce and special sauce made by a human.', '', '2019-08-30', '2019-10-16', 14),
+(4, 1, 'Filet de poisson', 7.99, 'It\'s halal.', 'May contain fish.', '2019-09-11', '2019-09-11', 0),
 (5, 1, 'Wac nugget', 22.00, '', '', '2019-10-16', '2019-10-16', 0);
 
 -- --------------------------------------------------------
@@ -173,17 +204,21 @@ CREATE TABLE `users` (
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `created` date NOT NULL,
   `modified` date NOT NULL,
-  `user_type_id` int(11) NOT NULL
+  `user_type_id` int(11) NOT NULL,
+  `uuid` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `created`, `modified`, `user_type_id`) VALUES
-(1, 'admin', '$2y$10$W6i98KEa9Of/DUNQNZbxQ.t2axu.7qwwGP.1zrTFp1ObZobv91Tt6', 'admin@admin.com', '2019-09-11', '2019-09-18', 1),
-(4, 'test', '$2y$10$5Qw6Uhg4t4Y7RK9/udglpuFOWlly3fnz3N9yfBeqpgWWxTC8atn.e', 'test@test.com', '2019-10-15', '2019-10-15', 1),
-(5, 'test2', '$2y$10$C0BjzxT0LAIycvcqdgMpxuSZxeQLzCE6Viv9Ko.N4Wi0iu9Y4V.ZO', 'test@test2.com', '2019-10-15', '2019-10-15', 2);
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `created`, `modified`, `user_type_id`, `uuid`, `status`) VALUES
+(1, 'admin', '$2y$10$W6i98KEa9Of/DUNQNZbxQ.t2axu.7qwwGP.1zrTFp1ObZobv91Tt6', 'admin@admin.com', '2019-09-11', '2019-09-18', 1, 'cd527758-6dea-49a2-bf11-64006d5aec1a', 1),
+(4, 'test', '$2y$10$5Qw6Uhg4t4Y7RK9/udglpuFOWlly3fnz3N9yfBeqpgWWxTC8atn.e', 'test@test.com', '2019-10-15', '2019-10-15', 1, '016c51a8-f42b-45aa-a231-77a0a2da4474', 1),
+(5, 'test2', '$2y$10$C0BjzxT0LAIycvcqdgMpxuSZxeQLzCE6Viv9Ko.N4Wi0iu9Y4V.ZO', 'test@test2.com', '2019-10-15', '2019-10-15', 2, 'a8e6fbb4-7d86-40c2-93c9-79df2978ee8d', 1),
+(6, 'test3', '$2y$10$sG/GpIeq3z8pU.0cUWIa.e.bQ.7PLoklZo3Z.qBqSJdMoqgIgrZ0G', 'test3@test.com', '2019-10-16', '2019-10-16', 2, '696dda64-70e6-4657-a57e-1817a01cb142', 1),
+(7, 'fasf', '$2y$10$1P5ZFWvlhZwCNZkNGCYXLOGVRLfr7Q1nWFhSztcCQNOJg12ujR4UO', 'test@test4.com', '2019-10-16', '2019-10-17', 2, '145d4cad-85e8-4a07-8bf2-9210068904b4', 1);
 
 -- --------------------------------------------------------
 
@@ -214,6 +249,14 @@ INSERT INTO `user_types` (`id`, `type`) VALUES
 --
 ALTER TABLE `files`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `i18n`
+--
+ALTER TABLE `i18n`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `I18N_LOCALE_FIELD` (`locale`,`model`(100),`foreign_key`,`field`(100)),
+  ADD KEY `I18N_FIELD` (`model`(100),`foreign_key`,`field`(100));
 
 --
 -- Indexes for table `menus`
@@ -259,6 +302,7 @@ ALTER TABLE `quantities`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `uuid` (`uuid`),
   ADD KEY `user_type` (`user_type_id`);
 
 --
@@ -276,6 +320,12 @@ ALTER TABLE `user_types`
 --
 ALTER TABLE `files`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `i18n`
+--
+ALTER TABLE `i18n`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `menus`
@@ -305,7 +355,7 @@ ALTER TABLE `quantities`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user_types`

@@ -5,8 +5,15 @@
 
    class EmailsController extends AppController{
       public function index(){
+        $session = $this->request->session();
+        $uuid = $session->read('uuid');
+        $mail = $session->read('email');
+        
          $email = new Email('default');
-         $email->to('abc@gmail.com')->subject('Confirmation')->send('My message');
+         $email->to($mail)->subject('Confirmation')->send("http://" . $_SERVER['HTTP_HOST'] . $this->request->webroot . "users/confirm/" . $user_uuid);
+
+         
+
       }
    }
 ?>

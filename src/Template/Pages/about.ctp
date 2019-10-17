@@ -27,7 +27,8 @@
 		Quand il ajoute un article il va etre rediriger vers une page de confirmation et par la suite retourner sur la page des commandes.<br>
 		Il ne peut pas modifier ou supprimer les éléments du site. Pas tout les pages sont accessible par liens. <br>
 		Par exemple, l'index des quantités ou l'index des utilisateurs. Par contre, les pages sont présentes et ils sont accessibles.<br> 
-		Un administrateur a accès a tout. Voici quelques comptes utilisables : <br>nom: admin pass: admin <br> nom: test pass: test <br>
+		Un administrateur a accès a tout. L'envoie d'email utilise davmail.<br>
+		Voici quelques comptes utilisables : <br>nom: admin pass: admin <br> nom: test pass: test <br>
 		 </p>
 		
 	

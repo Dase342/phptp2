@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Utility\Text;
 
 /**
  * Users Controller
@@ -54,20 +55,39 @@ class UsersController extends AppController
      */
     public function add()
     {
+
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             $user->user_type_id = 2;
+            $user->uuid = Text::uuid();
+            $session = $this->request->session();
+            $session->write('uuid', $user->uuid); 
+            $session->write('email', $user->email); 
+            
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'Emails','action' => 'index']);
             }
 
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
         $this->set(compact('user', 'userTypes'));
+    }
+
+    public function confirmer($uuid = null)
+    {
+       
+       $user = $this->Users->find('all')->where(['Users.uuid =' => $uuid])->first();
+
+       $user->status = 1;
+ 
+       $this->Users->save($user);
+       return $this->redirect(['action' => 'view', $user->id]);
+
+        
     }
 
  

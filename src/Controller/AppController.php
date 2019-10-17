@@ -67,7 +67,7 @@ class AppController extends Controller
 
         // Allow the display action so our PagesController
         // continues to work. Also enable the read only actions.
-        $this->Auth->allow(['display', 'changeLang']);
+        $this->Auth->allow(['display', 'changeLang', 'index','confirmer']);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -83,11 +83,14 @@ class AppController extends Controller
         $action = $this->request->getParam('action');
         // Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
         // authentifiés sur l'application
-        if (in_array($action, ['add', 'viewLast','view', 'index']) && $user['user_type_id'] == 2) {
-            return true;
-        } else if (in_array($action, ['add','edit', 'delete', 'index', 'view', 'viewLast', 'addImg']) && $user['user_type_id'] == 1) {
-            return true;
+        if($user['status'] == 1){
+            if (in_array($action, ['add', 'viewLast','view']) && $user['user_type_id'] == 2) {
+                        return true;
+            } else if (in_array($action, ['add','edit', 'delete', 'view', 'viewLast', 'addImg']) && $user['user_type_id'] == 1) {
+                        return true;
+            }
         }
+        
     return false;
     }
     

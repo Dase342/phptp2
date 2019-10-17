@@ -38,7 +38,9 @@ class User extends Entity
         'modified' => true,
         'user_type_id' => true,
         'user_type' => true,
-        'orders' => true
+        'orders' => true,
+        'uuid' => true,
+        'status' => true
     ];
 
     /**

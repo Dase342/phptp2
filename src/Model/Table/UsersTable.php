@@ -5,6 +5,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\ORM\Rule\IsUnique;
 
 /**
  * Users Model
@@ -78,6 +79,10 @@ class UsersTable extends Table
             ->email('email')
             ->allowEmptyString('email');
 
+        $validator
+            ->scalar('uuid')
+            ->EmptyString('email');
+
         return $validator;
     }
 
@@ -92,6 +97,7 @@ class UsersTable extends Table
     {
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->isUnique(['uuid']));
         $rules->add($rules->existsIn(['user_type_id'], 'UserTypes'));
 
         return $rules;
