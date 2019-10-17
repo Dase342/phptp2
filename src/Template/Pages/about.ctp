@@ -37,7 +37,25 @@
 		 4. Cliquer sur New order puis create.<br>
 		 5. Cliquer sur add an article to order.<br>
 		 6. Choisir wac poulet dans la liste deroulante.<br>
-		 6. Mettre 2 dans la quantité puis cliquer sur submit</p>
+		 6. Mettre 2 dans la quantité puis cliquer sur submit.<br>
+		 7. Cliquer sur confirm.<br>
+		 8. Déconnecter et reconnecter avec admin et le mot de passe admin.<br>
+		 9. Aller sur menu-items<br>
+		 10. Cliquer sur add image.<br>
+		 11. Téléverser une image.<br>
+		 12. Cliquer sur edit dans la section filet de poisson.<br>
+		 13. Changer l'image dans files et cliquer sur submit.<br>
+		 14. Cliquer sur view dans la section filet de poisson.<br>
+		 15. Changer la langue en francais, russe puis anglais et cliquer sur list menus sur la gauche.<br>
+		 16. Cliquer sur view dans la section Wacdonald.<br>
+		 17. Changer la langue en francais, russe pui anglais et cliquer sur logout.<br>
+		 18. Cliquer sur create account.<br>
+		 19. Remplir les informations et cliquer sur submit.<br>
+		 20. Connecter a l'email écrit puis cliquer sur le lien.<br>
+		 20a. S'il l'email marche pas chercher le uuid de l'utilisateur et mettre dans le lien : /users/confirmer/remplaceravecuuid.<br>
+		 
+
+		 </p>
 		
 	
 

@@ -24,6 +24,7 @@ class OrdersQuantity extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'order_id' => true,
         'quantity_id' => true,
         'order' => true,

@@ -34,7 +34,9 @@ class OrdersQuantitiesTable extends Table
         parent::initialize($config);
 
         $this->setTable('orders_quantities');
-
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
+        
         $this->belongsTo('Orders', [
             'foreignKey' => 'order_id',
             'joinType' => 'INNER'

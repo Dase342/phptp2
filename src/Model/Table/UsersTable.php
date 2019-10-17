@@ -79,9 +79,7 @@ class UsersTable extends Table
             ->email('email')
             ->allowEmptyString('email');
 
-        $validator
-            ->scalar('uuid')
-            ->EmptyString('email');
+
 
         return $validator;
     }
