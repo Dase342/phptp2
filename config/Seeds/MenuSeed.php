@@ -24,7 +24,7 @@ class MenuSeed extends AbstractSeed
                 'menu_name' => 'Wacdonald',
                 'created' => '2019-08-30',
                 'modified' => '2019-08-30',
-                'menu_description' => 'Menu officiel du Wacdonald.',
+                'menu_description' => 'Wacdonald\'s official menu.',
                 'other_details' => NULL,
             ],
         ];

@@ -37,6 +37,24 @@ class OrdersSeed extends AbstractSeed
                 'created' => '2019-10-09',
                 'modified' => '2019-10-09',
             ],
+            [
+                'id' => '7',
+                'user_id' => '5',
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15',
+            ],
+            [
+                'id' => '8',
+                'user_id' => '5',
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15',
+            ],
+            [
+                'id' => '9',
+                'user_id' => '5',
+                'created' => '2019-10-15',
+                'modified' => '2019-10-15',
+            ],
         ];
 
         $table = $this->table('orders');

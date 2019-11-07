@@ -23,10 +23,6 @@ class OrdersQuantitiesSeed extends AbstractSeed
                 'order_id' => '1',
                 'quantity_id' => '1',
             ],
-            [
-                'order_id' => '1',
-                'quantity_id' => '1',
-            ],
         ];
 
         $table = $this->table('orders_quantities');
