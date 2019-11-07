@@ -89,6 +89,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <?= $this->fetch('content') ?>
         </div>
         <footer>
+		<?= $this->fetch('scriptLibraries') ?>
+        <?= $this->fetch('script'); ?>
+        <?= $this->fetch('scriptBottom') ?> 
         </footer>
     </body>
 </html>

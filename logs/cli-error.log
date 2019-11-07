@@ -252,3 +252,379 @@ Stack Trace:
 #21 {main}
 
 
+2019-10-23 17:41:52 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'resto_menu.menuses' doesn't exist in C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Menus')
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Menus')
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Menus')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2019-10-23 17:45:54 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'resto_menu.i18ns' doesn't exist in C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2019-10-23 17:46:22 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'resto_menu.menuses' doesn't exist in C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Menus')
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Menus')
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Menus')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2019-10-23 19:09:29 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [14] unable to open database file in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php on line 157
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(136): Phinx\Db\Adapter\SQLiteAdapter->connect()
+#1 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(489): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\CakeAdapter.php(56): Phinx\Db\Adapter\AdapterWrapper->getConnection()
+#3 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\TimedOutputAdapter), Object(Cake\Database\Connection))
+#4 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(74): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#15 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#16 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2019-10-30 17:50:22 Error: [InvalidArgumentException] The seed class "userTypesSeed" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'userTypesSeed')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:10:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: menuses in C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 107
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(107): PDO->prepare('SELECT * FROM m...')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Driver\Sqlite->prepare(Object(Cake\Database\Query))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(282): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Connection->prepare(Object(Cake\Database\Query))
+#5 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('Menus')
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('Menus')
+#14 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Menus')
+#15 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#16 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#17 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2019-11-07 14:17:13 Error: [InvalidArgumentException] The seed class "user_types" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'user_types')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:17:24 Error: [InvalidArgumentException] The seed class "user_type" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'user_type')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:17:50 Error: [InvalidArgumentException] The seed class "userTypes" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'userTypes')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:17:57 Error: [InvalidArgumentException] The seed class "UserTypes" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'UserTypes')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:18:27 Error: [InvalidArgumentException] The seed class "userTypesSeed" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'userTypesSeed')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:18:35 Error: [InvalidArgumentException] The seed class "user_typesSeed" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'user_typesSeed')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:18:45 Error: [InvalidArgumentException] The seed class "usertypesSeed" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'usertypesSeed')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:18:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: user_types.id in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 317
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(317): PDOStatement->execute(Array)
+#1 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(655): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->saveData()
+#6 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(685): Phinx\Db\Table->update()
+#7 C:\UniServerZ\www\phptp1\config\Seeds\UserTypesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): UserTypesSeed->run()
+#9 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(421): Phinx\Migration\Manager\Environment->executeSeed(Object(UserTypesSeed))
+#10 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(564): Phinx\Migration\Manager->executeSeed('default', Object(UserTypesSeed))
+#11 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'UserTypesSeed')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-11-07 14:19:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: files.id in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 317
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(317): PDOStatement->execute(Array)
+#1 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(655): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->saveData()
+#6 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(685): Phinx\Db\Table->update()
+#7 C:\UniServerZ\www\phptp1\config\Seeds\FilesSeed.php(49): Phinx\Db\Table->save()
+#8 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): FilesSeed->run()
+#9 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(421): Phinx\Migration\Manager\Environment->executeSeed(Object(FilesSeed))
+#10 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(564): Phinx\Migration\Manager->executeSeed('default', Object(FilesSeed))
+#11 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'FilesSeed')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-11-07 14:19:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: menus.id in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 317
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(317): PDOStatement->execute(Array)
+#1 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(655): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->saveData()
+#6 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(685): Phinx\Db\Table->update()
+#7 C:\UniServerZ\www\phptp1\config\Seeds\MenuSeed.php(33): Phinx\Db\Table->save()
+#8 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): MenuSeed->run()
+#9 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(421): Phinx\Migration\Manager\Environment->executeSeed(Object(MenuSeed))
+#10 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(564): Phinx\Migration\Manager->executeSeed('default', Object(MenuSeed))
+#11 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'MenuSeed')
+#12 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2019-11-07 14:23:37 Error: [InvalidArgumentException] The seed class "i18n" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'i18n')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2019-11-07 14:23:46 Error: [InvalidArgumentException] The seed class "i18nSeed" does not exist in C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php on line 566
+Stack Trace:
+#0 C:\UniServerZ\www\phptp1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(115): Phinx\Migration\Manager->seed('default', 'i18nSeed')
+#1 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\UniServerZ\www\phptp1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(921): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\UniServerZ\www\phptp1\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(109): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#9 C:\UniServerZ\www\phptp1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(165): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#11 C:\UniServerZ\www\phptp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#12 C:\UniServerZ\www\phptp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
