@@ -24,7 +24,7 @@ echo $this->Html->script('Cars/autocompletedemo', ['block' => 'scriptBottom']);
     <fieldset>
         <legend><?= __('Add Menu') ?></legend>
         <?php
-            echo $this->Form->control('menu_name');
+           
             echo $this->Form->input('menu_name', ['id' => 'autocomplete']);
             echo $this->Form->control('menu_description');
             echo $this->Form->control('other_details');

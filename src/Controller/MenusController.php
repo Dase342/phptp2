@@ -20,7 +20,7 @@ class MenusController extends AppController
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['autocompletedemo', 'findMenus']);
+        $this->Auth->allow(['findMenus']);
     }
 
     public function index()
