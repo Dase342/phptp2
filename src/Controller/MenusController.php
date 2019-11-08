@@ -17,6 +17,12 @@ class MenusController extends AppController
      *
      * @return \Cake\Http\Response|null
      */
+
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['autocompletedemo', 'findMenus']);
+    }
+
     public function index()
     {
         $menus = $this->paginate($this->Menus);
