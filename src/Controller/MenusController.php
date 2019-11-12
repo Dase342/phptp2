@@ -22,7 +22,7 @@ class MenusController extends AppController
         parent::initialize();
         $this->Auth->allow(['findMenus']);
     }
-
+  
     public function index()
     {
         $menus = $this->paginate($this->Menus);
@@ -109,4 +109,24 @@ class MenusController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+   
+    public function findMenus() {
+    
+        
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Menus->find('all', array(
+                'conditions' => array('Menus.menu_name LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['menu_name'], 'value' => $result['menu_name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
 }

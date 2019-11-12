@@ -47,7 +47,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 ], ['block' => 'scriptLibraries']
         );
         ?>
-	<?= $this->Flash->render() ?>
+
 	
 </head>
 <body>
@@ -104,9 +104,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <?= $this->fetch('content') ?>
         </div>
         <footer>
-		<?= $this->fetch('scriptLibraries') ?>
+        </footer>
+        <?= $this->fetch('scriptLibraries') ?>
         <?= $this->fetch('script'); ?>
         <?= $this->fetch('scriptBottom') ?> 
-        </footer>
     </body>
 </html>
