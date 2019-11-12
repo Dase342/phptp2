@@ -11187,3 +11187,30 @@ Request URL: /menus/find-menus.json?term=B
 Referer URL: http://localhost/phptp/menus/add
 
 
+2019-11-12 21:11:40 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "menus" with primary key [NULL]
+#0 F:\uniserver2\www\phptp\src\Controller\MenusController.php(80): Cake\ORM\Table->get(Array, Array)
+#1 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\MenusController->edit()
+#2 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\MenusController))
+#4 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 F:\uniserver2\www\phptp\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 F:\uniserver2\www\phptp\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 F:\uniserver2\www\phptp\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /menus/edit/
+Referer URL: http://localhost/phptp/menus/edit/1
+
+

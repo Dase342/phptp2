@@ -79,7 +79,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             echo "</li>";
                         }
                         ?>
-                         <li>
+                        <li>
+                        <?php echo $this->Html->link(__('Locations'), ['controller' => 'Locations', 'action' => 'index']) ?>
+                        </li>
+                        <li>
                         <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
                         </li>
                         <li>
