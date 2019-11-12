@@ -12,7 +12,7 @@ $urlToCarsAutocompletedemoJson = $this->Url->build([
 echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToCarsAutocompletedemoJson . '";', ['block' => true]);
 
 echo $this->Html->script('Menus/autocomplete', ['block' => 'scriptBottom']);
-debug($urlToCarsAutocompletedemoJson);
+
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
