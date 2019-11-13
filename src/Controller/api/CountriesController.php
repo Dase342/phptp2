@@ -12,7 +12,7 @@ class CountriesController extends AppController
         'limit' => 100,
         'maxLimit' => 150,
 /*        'fields' => [
-            'id', 'name', 'description'
+            'id', 'name'
         ],
 */        'sortWhitelist' => [
             'id', 'name'
