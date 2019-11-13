@@ -3,6 +3,13 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Location $location
  */
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Cities",
+    "action" => "getByCountry",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Locations/add', ['block' => 'scriptBottom']);
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -23,6 +30,7 @@
     <fieldset>
         <legend><?= __('Edit Location') ?></legend>
         <?php
+         echo $this->Form->control('Country_id', ['options' => $countries]);
             echo $this->Form->control('city_id', ['options' => $cities]);
             echo $this->Form->control('address');
         ?>

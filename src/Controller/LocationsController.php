@@ -101,7 +101,22 @@ class LocationsController extends AppController
             $this->Flash->error(__('The location could not be saved. Please, try again.'));
         }
         $cities = $this->Locations->Cities->find('list', ['limit' => 200]);
-        $this->set(compact('location', 'cities'));
+
+         // Bâtir la liste des catégories  
+         $this->loadModel('Countries');
+         $countries = $this->Countries->find('list', ['limit' => 200]);
+ 
+         // Extraire le id de la première catégorie
+         $countries = $countries->toArray();
+         reset($countries);
+         $country_id = key($countries);
+ 
+         // Bâtir la liste des sous-catégories reliées à cette catégorie
+         $cities = $this->Locations->Cities->find('list', [
+             'conditions' => ['Cities.country_id' => $country_id],
+         ]);
+
+        $this->set(compact('location', 'cities', 'countries'));
     }
 
     /**
