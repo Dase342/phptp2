@@ -200,3 +200,29 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+if (Configure::read('debug')) {
+    Plugin::load('DebugKit', ['bootstrap' => true]);
+}
+
+Plugin::load('Crud');
+
+Plugin::load('ADmad/JwtAuth');
+
+Plugin::load('Migrations');
+
+Configure::write('CakePdf', [
+    'engine' => [
+        'className' => 'CakePdf.WkHtmlToPdf',
+        'binary' => 'C:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe'
+    ],
+    'margin' => [
+        'bottom' => 15,
+        'left' => 50,
+        'right' => 30,
+        'top' => 45
+    ],
+    'orientation' => 'landscape',
+    'download' => true
+]);
+
+Plugin::load('CakePdf', ['bootstrap' => true]);

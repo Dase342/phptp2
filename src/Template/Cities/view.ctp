@@ -12,7 +12,7 @@
         <li><?= $this->Html->link(__('List Cities'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New City'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?> </li>
+
         <li><?= $this->Html->link(__('List Locations'), ['controller' => 'Locations', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Location'), ['controller' => 'Locations', 'action' => 'add']) ?> </li>
     </ul>

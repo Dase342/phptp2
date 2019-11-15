@@ -53,6 +53,10 @@ Router::prefix('api', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
 
+Router::prefix('Admin', function ($routes) {
+    $routes->fallbacks('InflectedRoute');
+});
+
 Router::scope('/', function (RouteBuilder $routes) {
     // Register scoped middleware for in scopes.
     /*$routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
@@ -63,7 +67,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
      */
-   // $routes->applyMiddleware('csrf');
+    //$routes->applyMiddleware('csrf');
 
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',

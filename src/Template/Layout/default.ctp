@@ -34,7 +34,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             'base.css',
             'style.css',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'Countries/basic.css',
+         
             'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
         ]);
     ?>
@@ -82,6 +82,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             echo "</li>";
                         }
                         ?>
+                        <li>
+                       <?php echo $this->Html->link(__('Admin'), [ 'prefix' => 'admin',  'controller' => 'Orders', 'action' => 'index']) ?>
+                        </li>
+                        <li>
+                        <?php echo $this->Html->link(__('Monopage'), ['controller' => 'Countries', 'action' => 'index']) ?>
+                        </li>
                         <li>
                         <?php echo $this->Html->link(__('Locations'), ['controller' => 'Locations', 'action' => 'index']) ?>
                         </li>
