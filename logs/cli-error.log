@@ -1236,3 +1236,13 @@ Stack Trace:
 #14 {main}
 
 
+2019-11-18 19:12:34 Error: [Error] Class 'Plugin' not found in C:\UniServerZ2\www\phptp2\config\bootstrap.php on line 204
+Stack Trace:
+#0 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(152): require_once()
+#1 C:\UniServerZ2\www\phptp2\src\Application.php(40): Cake\Http\BaseApplication->bootstrap()
+#2 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Console\CommandRunner.php(189): App\Application->bootstrap()
+#3 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Console\CommandRunner.php(132): Cake\Console\CommandRunner->bootstrap()
+#4 C:\UniServerZ2\www\phptp2\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#5 {main}
+
+

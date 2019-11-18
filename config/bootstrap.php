@@ -200,15 +200,6 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
-if (Configure::read('debug')) {
-    Plugin::load('DebugKit', ['bootstrap' => true]);
-}
-
-Plugin::load('Crud');
-
-Plugin::load('ADmad/JwtAuth');
-
-Plugin::load('Migrations');
 
 Configure::write('CakePdf', [
     'engine' => [
@@ -224,5 +215,3 @@ Configure::write('CakePdf', [
     'orientation' => 'landscape',
     'download' => true
 ]);
-
-Plugin::load('CakePdf', ['bootstrap' => true]);

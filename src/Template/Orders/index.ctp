@@ -39,6 +39,7 @@
                 echo "<td>". h($order->modified). "</td>";
                 echo "<td class=\"actions\">";
                 echo     $this->Html->link(__('View'), ['action' => 'view', $order->id]). " " ;
+                echo $this->Html->link('(pdf)', ['action' => 'view', $order->id . '.pdf']);
                 echo     $this->Html->link(__('Edit'), ['action' => 'edit', $order->id]). " " ;
                 echo     $this->Form->postLink(__('Delete'), ['action' => 'delete', $order->id], ['confirm' => __('Are you sure you want to delete # {0}?', $order->id)]); 
                 echo "</td>";

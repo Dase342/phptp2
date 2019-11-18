@@ -239,3 +239,39 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
 
 
 
+2019-11-18 19:13:12 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\UniServerZ2\www\phptp2\config\routes.php, line: 51
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 311
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT\config\routes.php, line 51
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1009
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1098
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1140
+require - ROOT\config\routes.php, line 54
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 419
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 146
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2019-11-18 19:13:58 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\UniServerZ2\www\phptp2\config\routes.php, line: 51
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 311
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT\config\routes.php, line 51
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1009
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1098
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1140
+require - ROOT\config\routes.php, line 54
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 419
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 146
+[main] - ROOT\bin\cake.php, line 12
+
+
+
