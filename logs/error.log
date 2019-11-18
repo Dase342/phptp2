@@ -15594,3 +15594,136 @@ Request URL: /orders-quantities/add
 Referer URL: http://localhost/phptp2/orders-quantities/add
 
 
+2019-11-18 19:27:37 Error: [InvalidArgumentException] Unknown type ""
+#0 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2169): Cake\Database\Type::build(NULL)
+#1 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2096): Cake\ORM\Table->_newId(Array)
+#2 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\OrdersQuantity), Array)
+#3 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\OrdersQuantity), Object(ArrayObject))
+#4 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#5 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#6 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#8 C:\UniServerZ2\www\phptp2\src\Controller\OrdersQuantitiesController.php(55): Cake\ORM\Table->save(Object(App\Model\Entity\OrdersQuantity))
+#9 [internal function]: App\Controller\OrdersQuantitiesController->add()
+#10 C:\UniServerZ2\www\phptp2\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#11 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#12 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OrdersQuantitiesController))
+#13 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\UniServerZ2\www\phptp2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\UniServerZ2\www\phptp2\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+Request URL: /orders-quantities/add
+Referer URL: http://localhost/phptp2/orders-quantities/add
+
+
+2019-11-18 20:35:56 Error: [InvalidArgumentException] Unknown type ""
+#0 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2169): Cake\Database\Type::build(NULL)
+#1 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2096): Cake\ORM\Table->_newId(Array)
+#2 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\OrdersQuantity), Array)
+#3 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\OrdersQuantity), Object(ArrayObject))
+#4 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#5 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#6 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#7 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#8 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\OrdersQuantity), Object(ArrayObject))
+#9 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Order), Array, Array)
+#10 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Order), Array, Array)
+#11 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Order), Array, Array)
+#14 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Order), Array)
+#15 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Order), Array, Array)
+#16 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\OrdersTable), Object(App\Model\Entity\Order), Array, Array, true)
+#17 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2054): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\OrdersTable), Object(App\Model\Entity\Order), Array, Array)
+#18 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(2027): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Order), Object(ArrayObject))
+#19 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Order), Object(ArrayObject))
+#20 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#21 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#22 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#23 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#24 C:\UniServerZ2\www\phptp2\src\Controller\Admin\OrdersController.php(124): Cake\ORM\Table->save(Object(App\Model\Entity\Order))
+#25 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\Admin\OrdersController->edit('13')
+#26 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#27 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Admin\OrdersController))
+#28 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\UniServerZ2\www\phptp2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\UniServerZ2\www\phptp2\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+Request URL: /admin/orders/edit/13
+Referer URL: http://localhost/phptp2/admin/orders/edit/13
+
+
+2019-11-18 20:37:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => 'admin',
+  '_ext' => false,
+)
+#0 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ2\www\phptp2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ2\www\phptp2\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /admin/users/logout
+Referer URL: http://localhost/phptp2/admin/orders
+
+
+2019-11-18 20:37:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => 'admin',
+  '_ext' => false,
+)
+#0 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(162): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ2\www\phptp2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ2\www\phptp2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ2\www\phptp2\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /admin/users/logout
+Referer URL: http://localhost/phptp2/admin/orders
+
+

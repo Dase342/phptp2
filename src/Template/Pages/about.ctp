@@ -10,7 +10,7 @@
 	
 		<h2>David To<br>420-5B7-MO Applications Internet.<br>Automne 2019, Collège Montmorency</h2>
 		<p>
-		<?php echo $this->Html->image('model.bmp', ['alt' => 'model']); ?>
+		<?php echo $this->Html->image('newDB.png', ['alt' => 'model']); ?>
 			
 		</p>
 		<br>
@@ -32,27 +32,21 @@
 		 </p>
 		 <h1>étape a suivre</h1>
 		 <p>1. Se connecter avec test2 en utilisant le mot de passe test2.<br>
-		 2. Cliquer sur view et puis sur home.<br>
-		 3. Cliquer sur francais, ensuite русский, puis anglais.<br>
-		 4. Cliquer sur New order puis create.<br>
-		 5. Cliquer sur add an article to order.<br>
-		 6. Choisir wac poulet dans la liste deroulante.<br>
-		 6. Mettre 2 dans la quantité puis cliquer sur submit.<br>
+		 2. Cliquer sur Locations en haut et puis sur New locations a gauche.<br>
+		 3. Cliquer sur la liste de Country puis selectionner Canada. Le champ City a changer a Laval<br>
+		 4. Cliquer sur Monopage en haut.<br>
+		 5. Cliquer sur l'icon edit du #2.<br>
+		 6. Changer le nom puis cliquer sur update country.<br>
+		 6. Cliquer sur Add puis ajouter un country.<br>
 		 7. Cliquer sur confirm.<br>
-		 8. Déconnecter et reconnecter avec admin et le mot de passe admin.<br>
-		 9. Aller sur menu-items<br>
-		 10. Cliquer sur add image.<br>
-		 11. Téléverser une image.<br>
-		 12. Cliquer sur edit dans la section filet de poisson.<br>
-		 13. Changer l'image dans files et cliquer sur submit.<br>
-		 14. Cliquer sur view dans la section filet de poisson.<br>
-		 15. Changer la langue en francais, russe puis anglais et cliquer sur list menus sur la gauche.<br>
-		 16. Cliquer sur view dans la section Wacdonald.<br>
-		 17. Changer la langue en francais, russe pui anglais et cliquer sur logout.<br>
-		 18. Cliquer sur create account.<br>
-		 19. Remplir les informations et cliquer sur submit.<br>
-		 20. Connecter a l'email écrit puis cliquer sur le lien.<br>
-		 20a. S'il l'email marche pas chercher le uuid de l'utilisateur et mettre dans le lien : /users/confirmer/remplaceravecuuid.<br>
+		 8. Delete la derniere entrée.<br>
+		 9. Cliquer sur accueil.<br>
+		 10. Cliquer sur pdf sur une des entrée. Ceci va télécharger un pdf.<br>
+		 11. Cliquer sur Admin. Ceci va vous amener sur la page admin avec toutes les entrées.<br>
+		 12. Cliquer sur new orders.<br>
+		 14. Ajouter une commande a l'admin.<br>
+		 15. Delete la derniere entrée.<br>
+		 
 		 
 
 		 </p>

@@ -52,6 +52,8 @@ class OrdersQuantitiesController extends AppController
         $ordersQuantity = $this->OrdersQuantities->newEntity();
         if ($this->request->is('post')) {
             $ordersQuantity = $this->OrdersQuantities->patchEntity($ordersQuantity, $this->request->getData());
+            debug($ordersQuantity);
+            die();
             if ($this->OrdersQuantities->save($ordersQuantity)) {
                 $this->Flash->success(__('The order has been saved.'));
 
